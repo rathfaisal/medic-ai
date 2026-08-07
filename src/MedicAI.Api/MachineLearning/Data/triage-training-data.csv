@@ -1,0 +1,1501 @@
+Label,Age,MainSymptom,DurationHours,PainSeverity,Fever,Vomiting,Dizziness,WorseningSymptoms,ExistingCondition,MissingInformation
+Priority,10,ear pain,1435,8,0,0,1,0,0,0
+Routine,27,urinary symptoms,852,3,0,0,1,0,0,0
+Priority,27,vomiting,41,7,0,0,0,0,1,0
+Routine,24,sore throat,284,6,1,0,0,0,0,0
+Urgent,84,dizziness,5,5,0,0,1,0,1,0
+Priority,36,abdominal pain,81,0,0,0,0,0,1,0
+Priority,50,cough,1363,6,1,0,1,0,1,0
+Routine,20,abdominal pain,38,1,0,0,1,0,0,0
+Priority,66,fatigue,48,2,1,0,1,0,1,0
+Routine,52,headache,22,1,0,0,0,0,0,0
+Priority,17,back pain,248,4,0,0,0,0,0,0
+Routine,69,fatigue,31,1,0,0,0,0,0,0
+Priority,31,skin rash,597,6,0,1,0,0,1,0
+Urgent,56,cough,72,9,0,0,0,1,0,1
+Priority,40,joint pain,46,9,0,0,1,0,0,0
+Priority,47,dizziness,288,7,0,0,0,0,0,0
+Routine,69,back pain,273,0,0,0,0,1,0,0
+Routine,60,cough,388,2,0,0,0,0,1,0
+Priority,69,fatigue,19,7,0,0,1,0,0,0
+Priority,73,dizziness,157,2,0,0,1,1,1,0
+Urgent,83,minor injury,325,8,0,0,0,1,0,0
+Priority,26,back pain,283,10,1,0,0,0,0,0
+Priority,39,minor injury,77,5,0,0,0,1,1,1
+Priority,13,diarrhoea,262,2,0,1,0,1,0,1
+Routine,87,vomiting,32,1,0,1,0,0,0,0
+Priority,86,cough,232,7,0,0,0,1,0,0
+Priority,21,headache,53,8,0,0,0,0,0,0
+Urgent,65,cough,24,7,1,0,0,1,1,0
+Priority,72,fatigue,262,3,0,0,1,0,1,0
+Urgent,80,diarrhoea,70,9,0,1,0,1,1,0
+Priority,72,sore throat,9,7,1,0,1,1,0,0
+Routine,71,headache,329,0,1,0,0,0,0,1
+Priority,17,minor injury,91,10,0,0,0,0,0,0
+Priority,10,fever,335,9,0,0,0,0,0,0
+Urgent,38,diarrhoea,91,7,1,0,0,1,0,0
+Priority,41,abdominal pain,2,6,0,1,0,0,0,0
+Priority,77,skin rash,14,4,0,0,0,0,1,0
+Priority,73,back pain,1143,9,0,0,0,1,0,1
+Urgent,8,diarrhoea,13,10,0,0,0,1,0,0
+Priority,40,back pain,126,7,0,1,0,0,1,0
+Urgent,85,abdominal pain,309,10,0,1,0,0,1,0
+Priority,16,dizziness,39,10,0,0,0,0,0,0
+Routine,13,urinary symptoms,44,4,1,0,0,0,0,0
+Routine,23,skin rash,19,2,0,0,0,1,1,0
+Priority,74,back pain,327,0,1,0,0,0,0,0
+Priority,22,minor injury,20,5,0,0,0,1,0,0
+Priority,53,fatigue,1120,6,1,1,0,0,0,1
+Priority,64,joint pain,1102,6,0,1,0,0,1,0
+Routine,45,back pain,163,0,0,0,0,0,0,0
+Priority,34,skin rash,826,4,0,0,0,1,0,0
+Priority,38,sore throat,3,7,1,0,0,0,0,0
+Routine,8,dizziness,33,0,0,0,0,0,0,0
+Urgent,14,diarrhoea,27,9,1,1,0,1,0,0
+Priority,57,headache,13,0,0,0,1,1,1,0
+Urgent,65,dizziness,310,9,0,0,1,0,0,0
+Routine,17,headache,33,2,0,0,0,0,0,0
+Routine,83,abdominal pain,4,2,0,0,0,0,0,0
+Routine,35,fever,42,2,1,0,0,0,0,0
+Urgent,84,fever,8,10,1,0,0,0,1,0
+Urgent,89,urinary symptoms,16,9,0,0,0,1,1,0
+Routine,48,diarrhoea,54,5,0,1,1,0,0,0
+Routine,35,joint pain,33,1,0,0,0,0,0,0
+Routine,75,urinary symptoms,111,3,0,1,0,0,0,0
+Priority,47,fatigue,22,10,1,0,0,0,1,0
+Urgent,73,ear pain,10,10,0,1,0,1,0,0
+Routine,15,headache,21,8,0,0,0,0,0,0
+Priority,83,joint pain,317,9,1,0,0,0,0,0
+Urgent,6,abdominal pain,5,9,0,0,0,1,1,0
+Priority,35,joint pain,41,8,0,1,0,0,0,0
+Routine,40,fever,3,4,0,0,1,0,0,0
+Priority,40,vomiting,8,5,0,1,0,0,1,1
+Urgent,79,fatigue,38,9,0,0,1,0,1,0
+Priority,75,sore throat,43,4,0,0,0,1,0,0
+Priority,6,urinary symptoms,184,1,0,0,0,1,0,0
+Routine,64,headache,41,6,0,0,0,0,1,0
+Routine,52,diarrhoea,238,4,0,0,0,1,0,0
+Routine,25,skin rash,63,3,0,0,1,0,0,0
+Routine,16,sore throat,13,6,1,0,0,0,0,0
+Routine,29,urinary symptoms,20,8,1,0,0,0,0,0
+Routine,15,headache,2,9,0,0,0,0,0,0
+Priority,18,skin rash,1173,8,0,0,0,0,1,0
+Priority,82,skin rash,1153,7,0,1,0,1,0,0
+Priority,79,skin rash,20,1,1,0,0,1,1,1
+Routine,24,headache,275,3,0,0,0,0,0,0
+Priority,84,urinary symptoms,10,3,0,0,0,0,1,0
+Routine,29,headache,1,6,0,0,1,0,0,0
+Priority,61,ear pain,65,3,1,0,0,1,0,0
+Routine,49,back pain,141,0,1,0,0,1,0,0
+Priority,58,urinary symptoms,57,10,1,1,1,0,0,0
+Priority,21,dizziness,275,1,0,0,1,1,0,0
+Priority,6,sore throat,480,7,1,0,0,0,0,0
+Routine,90,abdominal pain,13,0,0,0,0,0,0,0
+Priority,74,skin rash,209,1,0,0,1,1,1,0
+Priority,71,joint pain,17,4,0,0,0,0,1,0
+Priority,39,diarrhoea,81,7,0,0,0,0,0,0
+Priority,40,fever,12,9,0,0,0,0,0,0
+Priority,62,ear pain,163,3,0,0,0,0,0,0
+Routine,34,fatigue,29,2,0,0,1,0,1,0
+Urgent,77,fever,81,8,1,0,0,1,1,0
+Routine,72,urinary symptoms,16,1,0,0,0,0,0,0
+Priority,49,dizziness,315,2,0,0,1,0,0,0
+Priority,80,minor injury,11,6,0,0,0,0,0,0
+Routine,70,fatigue,24,2,0,0,0,0,1,0
+Routine,36,minor injury,18,2,0,0,0,0,0,0
+Routine,41,abdominal pain,83,5,0,1,0,0,0,0
+Priority,25,fatigue,31,10,0,0,1,0,0,1
+Urgent,12,minor injury,155,8,0,0,0,1,0,0
+Priority,73,minor injury,262,0,1,0,1,0,1,0
+Priority,37,cough,1314,5,1,0,0,1,0,0
+Routine,15,back pain,33,3,0,0,0,0,0,1
+Routine,60,joint pain,146,10,0,1,0,0,1,0
+Priority,25,back pain,114,8,0,0,0,0,1,0
+Routine,51,urinary symptoms,46,10,0,0,0,0,0,0
+Routine,41,dizziness,313,3,0,0,0,0,1,0
+Urgent,26,cough,1,10,1,0,0,1,0,0
+Routine,56,fatigue,22,8,0,0,0,0,0,0
+Routine,57,urinary symptoms,3,6,0,0,0,0,0,1
+Urgent,53,abdominal pain,198,8,1,1,1,0,0,0
+Urgent,85,joint pain,311,8,0,0,0,1,1,0
+Urgent,82,abdominal pain,20,8,0,1,0,0,1,0
+Priority,67,joint pain,32,3,1,0,0,0,0,0
+Priority,11,abdominal pain,34,1,1,1,0,1,0,0
+Priority,30,back pain,293,5,0,0,0,0,1,1
+Urgent,57,minor injury,24,6,0,0,1,1,1,0
+Routine,82,back pain,186,2,0,0,0,0,0,0
+Routine,16,skin rash,836,2,0,0,0,1,0,1
+Routine,40,fatigue,277,0,0,0,1,1,0,0
+Routine,16,diarrhoea,313,0,0,0,0,0,0,0
+Routine,50,minor injury,1145,3,0,0,0,0,0,0
+Priority,52,joint pain,246,6,0,1,0,0,0,0
+Priority,21,back pain,198,10,1,0,0,0,0,0
+Priority,36,back pain,15,0,1,0,0,1,1,0
+Priority,78,diarrhoea,2,0,0,1,0,1,1,0
+Routine,5,skin rash,283,2,0,0,0,0,0,0
+Priority,44,minor injury,44,6,0,0,0,1,0,0
+Priority,49,vomiting,94,5,0,0,0,1,0,0
+Urgent,87,dizziness,486,9,1,0,0,0,1,0
+Priority,39,urinary symptoms,7,2,0,1,0,1,0,1
+Urgent,67,minor injury,36,10,0,0,0,0,1,0
+Priority,30,diarrhoea,37,7,0,0,0,1,0,0
+Priority,57,diarrhoea,94,6,0,1,0,0,0,0
+Routine,18,diarrhoea,139,2,0,1,0,0,1,0
+Urgent,84,dizziness,58,9,0,0,1,0,1,0
+Urgent,86,diarrhoea,16,6,0,1,1,0,1,0
+Urgent,23,headache,327,9,1,1,1,1,0,0
+Routine,43,skin rash,22,6,0,0,0,1,0,0
+Priority,32,vomiting,121,6,0,1,0,1,0,0
+Priority,67,urinary symptoms,140,4,0,0,0,1,0,0
+Priority,36,cough,32,8,1,0,0,0,0,0
+Priority,84,headache,28,3,0,0,1,0,1,0
+Priority,43,fatigue,6,7,0,0,0,0,0,0
+Priority,72,urinary symptoms,374,0,0,0,0,1,1,0
+Urgent,84,abdominal pain,169,9,1,1,1,1,1,0
+Urgent,82,abdominal pain,13,3,1,1,0,0,1,0
+Urgent,23,headache,116,10,0,0,0,1,0,0
+Urgent,69,fever,202,8,1,0,0,1,1,0
+Priority,32,urinary symptoms,88,9,0,0,0,0,1,0
+Routine,21,fever,1440,3,0,0,0,0,0,0
+Routine,39,fatigue,906,0,0,0,0,0,0,0
+Priority,10,cough,123,1,1,0,0,1,0,0
+Routine,60,skin rash,93,6,0,0,0,0,1,0
+Urgent,80,headache,177,2,0,0,0,1,1,0
+Urgent,82,headache,275,9,1,0,1,0,1,0
+Urgent,88,cough,671,10,1,0,0,0,1,0
+Priority,42,back pain,126,3,0,0,0,1,0,0
+Routine,53,back pain,37,0,0,0,0,0,0,1
+Routine,50,ear pain,45,0,0,0,0,1,0,0
+Priority,14,minor injury,251,4,0,0,0,0,1,0
+Priority,72,vomiting,47,0,0,0,0,1,1,0
+Routine,44,skin rash,45,4,0,0,0,1,0,0
+Routine,22,cough,202,5,1,0,0,0,0,0
+Priority,34,ear pain,269,6,0,0,0,1,0,0
+Priority,84,back pain,157,9,0,0,1,0,1,0
+Priority,7,minor injury,28,10,0,0,1,0,0,1
+Priority,63,dizziness,19,6,0,0,1,0,1,0
+Priority,58,urinary symptoms,263,6,0,0,0,0,1,0
+Urgent,84,joint pain,1,4,0,0,0,1,1,0
+Priority,56,sore throat,257,6,1,0,0,0,0,0
+Priority,7,fatigue,19,7,0,0,0,0,1,0
+Urgent,42,minor injury,238,9,0,0,0,1,1,0
+Priority,48,ear pain,32,0,1,0,0,0,1,0
+Priority,7,fever,42,2,0,0,0,1,0,0
+Priority,65,fever,28,3,1,0,0,0,1,0
+Urgent,82,minor injury,173,9,1,0,0,1,1,0
+Urgent,38,vomiting,145,1,1,1,0,1,0,0
+Routine,11,cough,305,3,1,0,0,1,0,0
+Urgent,76,back pain,1163,10,0,0,0,1,1,0
+Routine,76,fatigue,1,0,0,0,1,1,0,0
+Urgent,82,vomiting,219,5,0,0,0,1,1,0
+Routine,58,sore throat,1056,0,1,0,1,0,1,1
+Priority,54,headache,140,7,0,0,0,1,0,0
+Routine,64,cough,45,9,1,0,0,0,1,0
+Urgent,86,fever,314,3,1,0,0,1,0,0
+Routine,54,ear pain,284,1,1,0,0,1,0,0
+Priority,76,fever,42,8,0,0,0,0,0,0
+Urgent,86,abdominal pain,1081,8,0,1,1,0,1,0
+Routine,16,dizziness,509,1,0,0,0,0,0,0
+Routine,85,skin rash,29,1,0,0,0,0,0,0
+Priority,40,ear pain,282,9,0,0,0,0,0,0
+Priority,26,fatigue,176,10,0,0,0,0,0,0
+Routine,49,minor injury,270,0,0,0,0,0,0,0
+Routine,18,vomiting,396,0,0,1,0,1,0,0
+Routine,56,joint pain,18,5,0,0,0,0,0,1
+Routine,53,diarrhoea,169,7,0,0,0,0,0,0
+Priority,16,skin rash,45,7,0,1,0,0,0,0
+Priority,18,abdominal pain,33,8,0,0,0,0,0,0
+Routine,17,urinary symptoms,20,3,0,0,0,0,0,0
+Priority,63,abdominal pain,91,6,0,1,0,0,1,0
+Routine,35,urinary symptoms,70,0,0,0,0,0,0,0
+Priority,82,ear pain,14,1,0,0,0,1,0,0
+Routine,20,headache,245,0,0,1,1,0,0,1
+Priority,36,vomiting,473,2,1,1,1,0,0,0
+Priority,34,abdominal pain,101,7,1,0,1,0,0,0
+Routine,55,back pain,330,2,0,0,0,1,0,1
+Priority,64,abdominal pain,31,2,1,1,0,0,1,0
+Priority,8,ear pain,7,5,0,0,0,0,1,0
+Priority,75,cough,122,1,1,0,0,0,1,0
+Routine,19,sore throat,4,3,1,0,0,0,0,0
+Routine,34,cough,324,5,0,0,0,1,0,0
+Urgent,69,dizziness,978,6,0,0,1,0,1,0
+Priority,84,fever,890,9,1,0,0,0,0,0
+Priority,90,ear pain,990,9,0,0,0,0,1,1
+Priority,55,diarrhoea,230,10,0,0,0,0,0,0
+Routine,18,dizziness,22,0,0,0,1,1,0,0
+Urgent,77,minor injury,39,9,0,0,1,1,0,1
+Priority,19,back pain,270,2,1,0,0,1,0,0
+Priority,81,urinary symptoms,214,3,0,0,0,0,0,0
+Priority,35,diarrhoea,13,6,0,0,0,0,0,0
+Priority,40,skin rash,81,5,0,0,0,1,0,0
+Urgent,72,sore throat,290,10,0,1,1,1,1,1
+Priority,72,headache,30,3,0,0,1,1,0,1
+Priority,49,diarrhoea,22,4,0,1,0,1,0,0
+Priority,31,minor injury,162,3,1,0,1,0,1,0
+Routine,8,joint pain,44,2,0,0,0,0,0,0
+Urgent,21,ear pain,180,9,1,0,0,0,1,0
+Priority,50,cough,163,6,1,0,1,0,0,0
+Priority,82,joint pain,150,9,0,0,0,0,1,0
+Routine,7,cough,46,4,1,0,0,0,0,0
+Priority,17,fatigue,197,5,0,0,1,1,0,0
+Priority,5,headache,25,3,1,0,0,1,0,0
+Urgent,72,cough,46,5,1,0,0,1,1,0
+Priority,34,cough,1,8,1,0,0,0,1,0
+Priority,65,ear pain,97,6,1,0,0,0,1,0
+Routine,42,skin rash,38,1,0,0,0,1,0,0
+Routine,9,headache,206,6,0,0,0,0,0,0
+Priority,18,headache,38,7,0,0,0,1,1,1
+Routine,58,abdominal pain,100,6,0,1,0,0,0,0
+Routine,17,dizziness,207,0,0,0,0,0,1,1
+Priority,85,ear pain,15,8,0,0,0,0,0,0
+Routine,59,cough,137,2,1,0,0,1,0,0
+Routine,46,headache,256,4,0,0,0,1,0,0
+Routine,62,skin rash,262,3,0,0,0,0,1,0
+Routine,32,headache,1071,5,0,0,0,0,0,0
+Routine,46,vomiting,37,1,1,1,0,0,0,0
+Routine,68,cough,1105,2,1,0,0,0,0,0
+Priority,60,fever,267,4,0,0,0,0,0,0
+Urgent,7,headache,297,9,0,0,1,0,1,0
+Priority,43,headache,61,5,0,1,0,1,0,0
+Priority,22,minor injury,425,5,0,0,0,1,0,1
+Routine,21,fever,1003,1,0,0,0,0,1,0
+Priority,19,urinary symptoms,220,7,0,0,0,0,1,0
+Urgent,28,vomiting,1137,10,0,0,1,1,0,0
+Urgent,70,headache,22,4,0,0,1,1,1,0
+Routine,9,dizziness,5,1,0,0,0,0,0,0
+Priority,81,headache,258,2,0,0,1,0,1,0
+Priority,19,skin rash,182,3,0,0,0,1,0,0
+Priority,77,fever,17,9,1,0,0,0,0,0
+Routine,11,dizziness,13,6,0,0,0,0,0,0
+Routine,32,back pain,31,5,0,0,0,0,0,0
+Priority,89,urinary symptoms,34,8,0,0,0,0,0,0
+Routine,41,dizziness,167,0,0,0,0,0,0,0
+Priority,63,fever,82,1,1,0,0,0,1,0
+Priority,14,headache,793,6,1,0,1,0,0,0
+Routine,59,cough,18,3,1,0,0,0,0,0
+Urgent,74,minor injury,276,3,0,0,0,1,0,0
+Priority,30,fatigue,158,3,0,0,0,1,0,0
+Priority,23,vomiting,5,10,0,1,0,1,1,0
+Routine,27,diarrhoea,48,0,0,0,1,0,0,0
+Routine,29,ear pain,299,2,0,0,0,0,0,0
+Priority,72,urinary symptoms,465,3,1,0,0,1,1,0
+Urgent,68,urinary symptoms,417,9,0,0,0,1,1,0
+Urgent,37,abdominal pain,44,2,0,1,0,1,1,0
+Priority,22,headache,564,6,1,0,1,0,0,0
+Routine,64,fever,37,6,0,0,0,0,1,0
+Priority,33,ear pain,255,5,0,0,0,1,0,0
+Priority,36,dizziness,796,2,1,0,1,1,0,0
+Priority,43,headache,184,6,0,0,0,0,0,0
+Routine,28,dizziness,193,6,0,0,0,0,0,0
+Routine,57,diarrhoea,10,9,0,0,0,0,0,1
+Priority,71,cough,138,1,1,0,0,1,0,0
+Routine,57,joint pain,139,1,0,0,0,0,0,0
+Urgent,10,fever,1280,9,0,1,0,1,0,0
+Priority,18,minor injury,35,2,0,0,0,1,1,0
+Routine,54,back pain,24,0,1,0,0,0,0,1
+Routine,23,cough,18,1,1,0,0,0,0,0
+Routine,22,cough,1273,0,1,0,0,0,1,0
+Priority,72,cough,15,4,1,0,0,0,1,0
+Urgent,48,vomiting,1208,9,0,1,0,0,0,0
+Priority,66,abdominal pain,309,7,0,0,0,1,0,0
+Routine,15,vomiting,18,5,0,0,0,0,0,0
+Routine,11,urinary symptoms,31,2,0,0,0,1,0,0
+Routine,37,sore throat,14,1,1,0,0,1,0,0
+Routine,13,back pain,302,0,0,0,0,0,0,0
+Priority,86,headache,73,7,1,0,0,0,0,0
+Priority,66,vomiting,109,3,0,0,0,0,1,0
+Priority,9,back pain,228,9,1,0,0,0,0,0
+Routine,53,cough,9,3,1,0,0,0,0,1
+Routine,34,diarrhoea,1133,0,0,0,0,0,0,0
+Urgent,9,fatigue,35,9,0,0,0,0,1,0
+Routine,90,diarrhoea,32,0,0,1,0,0,1,0
+Priority,42,headache,12,10,0,0,1,0,0,1
+Priority,29,sore throat,1105,9,1,0,0,0,0,0
+Urgent,49,ear pain,251,6,0,0,0,1,1,0
+Urgent,79,urinary symptoms,41,3,1,0,1,1,1,0
+Routine,24,headache,297,6,0,1,1,1,0,0
+Urgent,71,abdominal pain,21,8,0,1,0,1,1,0
+Routine,53,minor injury,51,1,0,0,0,1,0,0
+Priority,58,urinary symptoms,47,6,0,0,0,0,1,0
+Routine,48,fatigue,16,0,0,0,1,0,0,0
+Urgent,17,headache,18,9,0,0,1,0,1,0
+Priority,71,headache,25,3,0,0,1,0,0,0
+Routine,24,headache,239,1,0,0,0,0,0,0
+Routine,76,back pain,16,2,0,0,0,1,0,1
+Routine,23,back pain,344,7,0,0,0,0,0,1
+Urgent,74,dizziness,32,5,0,0,0,1,0,0
+Priority,21,fatigue,280,1,1,0,1,1,0,0
+Priority,86,minor injury,147,4,0,0,0,1,0,0
+Urgent,59,abdominal pain,120,9,0,0,0,1,0,0
+Routine,13,back pain,991,5,0,0,0,0,0,1
+Priority,40,back pain,325,7,1,0,0,0,0,0
+Urgent,34,fatigue,7,10,0,0,1,1,1,0
+Priority,20,sore throat,21,6,1,1,0,0,1,0
+Urgent,40,fever,45,3,1,0,0,1,1,0
+Priority,65,dizziness,294,4,0,0,0,0,0,0
+Routine,20,fever,13,4,0,0,0,0,0,0
+Routine,15,skin rash,17,2,1,0,0,0,1,1
+Routine,17,dizziness,737,3,0,0,1,0,0,0
+Priority,57,abdominal pain,139,2,0,1,0,1,1,1
+Urgent,35,minor injury,161,7,1,0,0,1,1,0
+Priority,38,skin rash,318,1,1,0,0,0,0,0
+Routine,38,ear pain,150,4,0,0,0,0,1,1
+Priority,65,dizziness,4,4,1,0,1,0,1,0
+Routine,35,cough,10,4,0,0,0,0,0,0
+Priority,89,sore throat,67,0,0,0,0,0,1,0
+Routine,83,dizziness,29,1,1,0,0,0,1,0
+Urgent,49,fever,9,6,0,0,1,1,1,0
+Priority,50,minor injury,120,6,0,0,0,0,0,0
+Priority,12,fatigue,709,7,0,0,1,0,1,0
+Urgent,46,headache,22,9,0,0,1,1,0,0
+Routine,36,minor injury,47,10,0,0,0,0,0,0
+Urgent,5,joint pain,148,9,0,0,0,1,0,1
+Priority,66,minor injury,15,5,0,0,1,0,1,0
+Urgent,88,ear pain,183,5,0,0,0,1,0,0
+Urgent,79,ear pain,730,10,0,0,0,1,0,1
+Priority,18,sore throat,409,4,0,0,0,1,0,1
+Routine,24,fatigue,249,3,0,0,0,0,0,0
+Urgent,11,back pain,4,10,1,0,0,1,1,0
+Urgent,84,minor injury,30,3,1,0,0,1,1,0
+Priority,66,abdominal pain,112,2,1,1,0,0,0,0
+Priority,65,vomiting,669,6,0,0,0,0,0,0
+Priority,33,cough,12,10,1,0,0,0,0,0
+Routine,29,sore throat,373,0,1,0,0,0,0,0
+Priority,19,sore throat,285,1,1,0,0,1,0,0
+Urgent,61,skin rash,18,9,0,0,1,1,1,0
+Urgent,85,ear pain,259,9,0,0,0,1,0,0
+Priority,45,vomiting,232,7,0,0,0,0,1,0
+Priority,48,skin rash,181,10,0,0,0,0,0,0
+Routine,18,skin rash,114,8,0,0,0,0,0,1
+Routine,60,dizziness,191,2,0,0,1,0,0,0
+Routine,37,joint pain,318,2,0,0,0,0,0,0
+Priority,40,dizziness,245,5,0,0,0,1,0,1
+Priority,47,vomiting,16,4,0,1,0,0,0,0
+Priority,50,back pain,1405,4,0,0,0,0,1,0
+Priority,76,headache,298,0,0,0,0,1,0,0
+Routine,21,minor injury,10,5,0,1,0,0,0,1
+Priority,81,urinary symptoms,4,3,0,0,0,0,1,1
+Priority,10,diarrhoea,284,2,0,1,0,1,1,0
+Routine,62,fever,276,5,1,0,0,0,0,0
+Routine,59,vomiting,41,1,0,0,0,0,0,0
+Priority,65,fever,10,4,1,0,0,0,1,0
+Priority,23,dizziness,9,3,1,0,1,0,1,0
+Routine,22,abdominal pain,1,4,0,0,0,1,1,0
+Priority,19,ear pain,26,10,0,0,0,1,1,0
+Urgent,89,headache,336,5,0,0,1,1,1,0
+Priority,51,vomiting,88,2,0,1,1,0,1,0
+Priority,45,vomiting,10,3,0,0,0,1,0,0
+Urgent,81,ear pain,30,5,0,0,0,1,1,0
+Priority,54,fatigue,55,4,0,1,1,0,0,0
+Priority,36,diarrhoea,15,4,0,0,0,1,0,0
+Routine,12,dizziness,6,0,0,0,1,1,0,0
+Urgent,59,urinary symptoms,259,6,1,0,0,1,0,0
+Priority,83,abdominal pain,257,0,0,1,0,0,0,0
+Priority,67,sore throat,233,8,1,0,0,0,0,0
+Priority,42,fever,44,3,1,0,0,1,0,0
+Priority,84,joint pain,214,4,0,0,0,1,0,1
+Urgent,86,diarrhoea,202,8,1,1,0,0,1,1
+Priority,83,abdominal pain,152,0,0,1,0,1,1,1
+Routine,61,joint pain,16,3,0,0,0,0,0,0
+Routine,5,abdominal pain,75,2,1,1,0,0,0,0
+Priority,40,cough,212,2,1,0,0,1,0,0
+Routine,51,sore throat,41,5,0,0,0,0,0,0
+Priority,15,back pain,86,5,1,0,0,1,0,0
+Routine,22,dizziness,48,1,0,0,0,0,0,0
+Routine,48,headache,13,5,0,0,1,0,0,0
+Routine,8,skin rash,113,0,0,0,0,0,0,0
+Routine,8,fever,44,4,0,0,0,0,0,0
+Routine,36,ear pain,200,4,0,0,0,0,0,0
+Routine,17,abdominal pain,326,1,0,0,1,0,0,0
+Priority,8,fatigue,869,7,0,0,1,0,1,0
+Routine,11,headache,419,4,0,0,0,0,0,0
+Routine,78,minor injury,147,0,0,0,0,0,1,1
+Routine,63,dizziness,32,1,0,0,0,0,0,0
+Priority,86,cough,43,4,0,0,0,1,0,0
+Routine,89,diarrhoea,7,1,0,0,0,0,0,0
+Routine,30,headache,31,2,1,0,0,0,0,0
+Routine,32,joint pain,186,1,1,0,1,0,0,0
+Priority,10,back pain,38,8,0,0,0,1,0,0
+Priority,55,headache,776,5,0,0,0,1,0,0
+Routine,43,ear pain,270,2,0,0,0,0,0,0
+Routine,59,joint pain,12,3,0,0,0,0,0,0
+Priority,16,vomiting,203,2,1,1,0,0,0,0
+Priority,77,diarrhoea,4,2,0,0,0,1,0,0
+Routine,12,dizziness,199,5,0,0,1,0,0,0
+Priority,6,headache,324,7,0,0,1,0,1,0
+Priority,86,fatigue,628,9,0,0,1,0,1,0
+Routine,38,fever,37,4,1,0,0,0,0,0
+Priority,56,back pain,301,10,0,0,0,0,0,1
+Routine,11,headache,1134,2,0,0,0,0,0,0
+Routine,27,vomiting,24,9,0,1,0,0,0,0
+Urgent,74,fatigue,203,8,0,0,1,1,1,0
+Routine,40,sore throat,29,0,1,0,0,1,0,0
+Priority,32,dizziness,32,2,1,0,0,1,0,0
+Routine,72,diarrhoea,157,0,0,1,0,0,1,0
+Urgent,81,fever,41,5,1,0,1,0,1,0
+Priority,31,skin rash,13,1,0,0,1,1,0,0
+Routine,9,urinary symptoms,293,6,0,0,0,0,0,0
+Routine,84,cough,212,0,1,0,0,0,1,0
+Priority,53,cough,149,6,1,0,1,0,0,0
+Routine,9,cough,18,2,0,0,1,0,0,0
+Priority,77,abdominal pain,163,4,0,0,0,1,0,1
+Routine,75,joint pain,243,1,0,0,0,0,0,0
+Priority,66,urinary symptoms,10,5,0,0,0,0,0,0
+Routine,32,minor injury,439,10,0,0,0,0,0,0
+Routine,42,abdominal pain,152,3,0,1,0,0,0,0
+Routine,61,vomiting,99,6,0,1,0,0,0,0
+Routine,11,sore throat,47,5,0,0,0,0,0,0
+Priority,73,urinary symptoms,15,8,1,0,0,0,0,0
+Routine,21,minor injury,32,0,0,0,0,0,1,0
+Routine,44,ear pain,5,0,0,0,0,0,0,0
+Routine,58,joint pain,2,6,0,0,0,0,0,0
+Urgent,19,cough,1436,7,1,0,1,1,1,0
+Routine,49,joint pain,39,4,0,0,0,1,0,0
+Urgent,66,cough,38,3,1,0,0,1,1,0
+Priority,67,abdominal pain,40,6,0,1,0,0,1,0
+Urgent,81,vomiting,546,4,1,1,0,1,0,1
+Urgent,56,dizziness,22,6,0,1,1,1,0,0
+Priority,87,urinary symptoms,572,2,0,1,0,0,1,0
+Priority,62,dizziness,88,7,0,0,0,1,1,0
+Priority,24,ear pain,5,8,0,0,0,0,1,0
+Priority,36,dizziness,193,4,0,0,0,1,0,0
+Priority,70,cough,25,10,0,0,0,0,1,0
+Priority,88,sore throat,204,7,0,0,0,0,1,0
+Priority,28,cough,791,2,1,0,0,1,0,0
+Priority,73,fever,1260,1,1,0,0,0,1,0
+Priority,34,vomiting,286,10,0,1,0,0,1,0
+Routine,45,dizziness,839,0,0,0,1,0,1,0
+Routine,74,skin rash,17,3,0,0,0,0,1,0
+Priority,20,vomiting,251,4,1,0,0,0,1,0
+Urgent,64,fever,1,6,0,0,1,1,1,0
+Priority,70,diarrhoea,32,4,0,1,0,1,0,0
+Routine,56,sore throat,168,4,1,0,0,0,0,0
+Routine,41,back pain,235,4,0,0,1,0,0,0
+Priority,44,sore throat,175,1,1,1,0,0,0,0
+Priority,20,abdominal pain,25,5,0,0,1,1,1,0
+Priority,46,fatigue,81,1,0,0,1,0,1,0
+Urgent,57,abdominal pain,326,6,0,1,1,0,0,0
+Urgent,63,fever,44,9,1,0,0,1,0,1
+Priority,89,cough,30,8,0,1,0,0,1,0
+Priority,88,back pain,27,8,1,0,0,0,0,0
+Priority,51,dizziness,25,6,0,0,1,1,0,0
+Priority,68,fever,35,4,0,0,0,1,0,0
+Priority,36,ear pain,149,5,1,0,1,1,0,0
+Urgent,9,fatigue,184,9,0,0,0,1,0,0
+Routine,16,cough,140,1,0,0,0,0,1,0
+Routine,63,abdominal pain,9,4,0,1,0,0,0,0
+Priority,56,abdominal pain,12,10,0,0,0,0,0,0
+Priority,56,cough,258,6,0,0,0,0,0,0
+Urgent,68,ear pain,9,6,0,0,0,1,1,0
+Priority,11,skin rash,709,8,1,0,0,0,1,0
+Priority,29,fatigue,46,6,1,0,0,0,0,0
+Priority,33,headache,397,7,0,0,0,1,0,0
+Routine,45,headache,239,3,0,0,1,0,0,0
+Priority,52,urinary symptoms,42,6,0,0,0,0,1,0
+Routine,33,vomiting,24,3,0,1,0,0,0,0
+Priority,75,vomiting,339,1,0,1,0,0,0,0
+Urgent,20,abdominal pain,298,9,0,1,0,1,0,0
+Priority,14,vomiting,112,8,0,0,0,0,0,0
+Routine,35,skin rash,310,1,0,0,0,0,0,0
+Priority,66,diarrhoea,226,2,1,0,0,0,1,0
+Urgent,53,abdominal pain,582,8,1,0,0,0,0,0
+Priority,23,diarrhoea,30,2,0,1,0,1,1,0
+Urgent,87,sore throat,3,9,1,0,0,0,1,0
+Urgent,89,ear pain,24,9,0,0,0,1,1,0
+Priority,38,ear pain,286,6,0,0,0,0,0,0
+Urgent,70,joint pain,178,8,0,1,0,1,0,0
+Routine,7,fatigue,399,4,0,0,1,0,1,0
+Priority,12,ear pain,47,9,1,0,0,0,0,0
+Priority,83,cough,6,4,1,0,0,0,1,0
+Routine,55,ear pain,140,1,1,0,0,0,0,0
+Routine,62,minor injury,30,3,0,0,0,1,0,0
+Priority,78,fever,101,3,1,0,0,0,1,0
+Urgent,72,urinary symptoms,267,8,0,0,0,1,0,0
+Priority,67,headache,25,10,0,0,1,0,1,0
+Priority,63,minor injury,34,4,0,0,1,0,1,0
+Priority,50,skin rash,199,9,0,0,0,0,0,0
+Priority,39,diarrhoea,153,1,0,1,0,1,0,0
+Routine,63,dizziness,1004,4,0,0,1,0,0,0
+Priority,52,fever,291,8,1,0,0,0,0,0
+Routine,23,ear pain,48,10,1,0,0,0,1,0
+Routine,59,cough,160,0,1,0,0,0,0,0
+Routine,56,ear pain,148,0,0,1,0,0,0,0
+Routine,48,joint pain,26,4,0,0,0,1,0,0
+Routine,27,sore throat,2,0,1,0,0,0,0,0
+Routine,37,sore throat,108,3,1,0,0,0,0,0
+Urgent,9,headache,20,9,0,0,1,1,1,0
+Priority,46,skin rash,37,8,0,1,0,0,1,0
+Priority,76,minor injury,41,3,0,0,0,1,0,0
+Routine,40,dizziness,18,3,0,0,0,1,0,0
+Routine,12,vomiting,47,3,1,1,0,0,0,0
+Urgent,68,headache,245,6,1,1,1,0,0,0
+Routine,24,urinary symptoms,75,6,0,0,0,0,1,1
+Urgent,23,back pain,23,10,1,1,0,1,0,0
+Priority,84,fever,1401,7,0,0,0,0,0,0
+Routine,65,ear pain,45,0,0,0,0,1,0,0
+Priority,41,headache,30,8,0,0,0,1,0,0
+Urgent,73,ear pain,47,10,0,0,0,1,1,0
+Urgent,72,sore throat,188,8,0,0,0,1,0,1
+Routine,23,vomiting,43,2,0,0,0,0,0,0
+Routine,58,back pain,782,0,0,0,0,1,1,0
+Priority,11,ear pain,58,8,1,0,0,0,0,0
+Urgent,81,abdominal pain,61,7,0,0,0,0,1,0
+Priority,79,urinary symptoms,39,0,1,0,0,0,1,1
+Urgent,79,vomiting,16,1,0,0,0,1,1,0
+Priority,56,fever,60,3,1,0,0,0,1,0
+Routine,89,sore throat,22,4,0,0,0,0,0,0
+Urgent,7,fever,1074,9,1,1,1,1,1,0
+Routine,29,joint pain,95,0,0,0,0,0,0,0
+Priority,41,minor injury,234,3,0,1,1,0,1,0
+Priority,18,ear pain,586,6,0,0,0,1,0,0
+Routine,33,vomiting,718,1,0,1,0,0,1,0
+Priority,88,urinary symptoms,65,8,1,0,0,1,0,1
+Priority,63,fever,4,5,0,0,0,1,1,0
+Urgent,81,cough,28,5,1,1,0,1,0,0
+Routine,78,fever,36,1,0,0,1,0,1,0
+Urgent,61,abdominal pain,590,10,0,1,1,0,0,0
+Priority,11,vomiting,407,6,0,1,0,0,0,0
+Urgent,65,vomiting,7,10,0,0,0,0,1,0
+Urgent,75,cough,307,8,1,0,0,1,1,0
+Priority,32,abdominal pain,198,7,0,1,0,0,0,0
+Routine,13,fatigue,667,10,0,0,0,0,0,0
+Routine,33,diarrhoea,29,0,0,0,0,0,1,0
+Priority,45,cough,182,9,1,0,0,0,0,1
+Routine,25,fatigue,24,7,0,0,0,0,0,0
+Priority,90,abdominal pain,1,3,0,0,1,0,1,0
+Routine,55,diarrhoea,8,5,0,0,0,0,0,1
+Urgent,68,diarrhoea,2,7,0,0,0,0,1,0
+Routine,61,diarrhoea,42,1,1,1,0,0,0,0
+Priority,67,back pain,1389,0,0,0,0,1,1,0
+Routine,46,fever,19,0,1,0,0,0,0,0
+Priority,49,back pain,26,1,0,0,0,1,0,0
+Priority,77,joint pain,1,10,0,0,0,0,0,0
+Priority,82,joint pain,46,0,0,0,0,0,1,0
+Priority,24,cough,8,3,1,0,0,1,0,0
+Priority,5,fever,19,6,1,0,0,0,0,0
+Priority,87,ear pain,490,6,0,0,0,0,1,0
+Urgent,47,vomiting,118,6,0,1,0,1,0,0
+Priority,13,minor injury,7,5,0,0,0,1,1,0
+Routine,47,joint pain,16,0,0,0,0,0,0,0
+Urgent,33,fever,29,9,1,0,0,1,1,0
+Priority,11,diarrhoea,188,7,0,0,1,0,0,0
+Priority,23,fatigue,140,6,0,0,1,1,0,0
+Urgent,81,dizziness,965,8,0,0,0,0,1,0
+Routine,59,skin rash,31,0,1,0,0,0,0,0
+Priority,11,back pain,16,6,1,0,0,0,0,0
+Priority,74,minor injury,45,2,0,0,1,1,1,0
+Priority,85,cough,251,6,0,0,0,0,1,0
+Priority,76,joint pain,99,5,0,0,0,0,1,0
+Priority,8,skin rash,310,10,0,0,0,0,0,0
+Routine,23,fatigue,251,5,0,0,1,0,0,0
+Priority,90,vomiting,33,8,0,0,0,0,1,0
+Routine,83,diarrhoea,48,2,0,0,0,1,0,0
+Priority,89,headache,244,7,0,0,0,0,0,0
+Priority,62,minor injury,203,10,0,0,0,0,0,0
+Priority,20,ear pain,169,2,0,1,0,1,0,0
+Priority,21,fever,286,7,1,0,0,0,0,0
+Priority,60,headache,17,3,1,0,1,0,1,0
+Priority,44,fever,40,6,0,1,0,1,0,0
+Priority,83,sore throat,542,1,0,0,0,1,0,0
+Priority,11,fatigue,7,0,1,1,0,1,0,0
+Routine,12,vomiting,879,2,0,1,0,0,0,0
+Priority,75,dizziness,21,4,0,0,1,0,0,0
+Priority,15,cough,190,8,1,0,0,0,0,0
+Urgent,46,joint pain,192,4,0,0,0,1,0,0
+Urgent,9,headache,32,9,1,0,0,1,0,0
+Routine,41,fever,277,0,0,0,0,0,0,0
+Routine,7,urinary symptoms,154,2,1,1,0,0,0,1
+Priority,31,cough,152,7,1,0,0,0,0,0
+Routine,23,sore throat,283,5,0,0,0,0,0,0
+Routine,28,cough,42,3,0,0,0,1,0,0
+Routine,50,diarrhoea,8,1,0,0,0,0,0,0
+Priority,24,minor injury,45,10,0,0,0,0,1,0
+Priority,32,minor injury,59,8,0,1,0,0,1,0
+Routine,34,minor injury,45,4,0,0,1,0,0,0
+Priority,54,skin rash,309,10,0,0,0,0,0,0
+Priority,74,fever,66,5,0,0,0,0,1,1
+Routine,26,fever,26,4,1,0,0,1,0,0
+Routine,21,urinary symptoms,14,0,0,0,0,1,0,1
+Priority,66,back pain,468,4,0,1,0,0,0,0
+Priority,70,cough,858,0,1,0,0,0,1,0
+Urgent,56,abdominal pain,298,9,0,0,0,1,0,1
+Priority,32,sore throat,44,0,0,0,0,1,1,0
+Priority,40,back pain,306,3,1,0,0,1,0,0
+Priority,79,sore throat,269,7,1,0,0,0,1,0
+Urgent,7,fever,29,8,1,0,0,1,0,0
+Routine,33,fatigue,138,3,0,1,1,0,0,0
+Priority,21,headache,6,9,0,0,0,0,1,0
+Priority,78,vomiting,31,4,0,1,0,1,0,1
+Routine,17,dizziness,45,4,0,0,0,0,0,0
+Priority,5,sore throat,11,1,1,0,0,1,0,0
+Priority,27,joint pain,1125,0,1,0,1,1,0,0
+Urgent,81,sore throat,136,10,0,1,0,0,0,0
+Routine,68,skin rash,129,8,0,0,0,0,0,0
+Routine,6,back pain,945,5,0,0,0,0,0,0
+Routine,27,urinary symptoms,13,2,1,0,0,0,0,1
+Priority,76,vomiting,21,8,0,0,0,0,0,1
+Routine,73,fever,86,1,0,0,0,0,0,0
+Routine,45,urinary symptoms,1218,4,0,0,0,1,0,1
+Routine,29,skin rash,41,6,1,0,0,0,0,0
+Urgent,88,vomiting,309,10,0,0,0,0,1,0
+Priority,20,skin rash,195,2,0,0,0,0,0,1
+Priority,64,sore throat,17,0,1,1,0,1,0,0
+Priority,28,abdominal pain,59,5,0,0,0,0,1,0
+Urgent,67,back pain,1068,10,0,0,0,1,1,0
+Routine,16,joint pain,35,0,1,0,0,0,0,1
+Routine,34,ear pain,7,1,0,0,1,0,1,0
+Priority,20,back pain,38,8,0,0,0,0,1,0
+Routine,28,back pain,402,4,0,0,0,0,0,0
+Priority,36,vomiting,328,2,1,1,0,0,0,0
+Priority,81,joint pain,35,5,0,0,0,0,1,0
+Priority,75,fever,28,8,0,0,0,0,1,0
+Priority,58,diarrhoea,36,7,0,1,1,0,0,0
+Priority,53,back pain,1,9,0,0,0,0,0,0
+Priority,39,fatigue,272,5,0,0,1,0,0,0
+Routine,57,minor injury,400,2,0,0,0,1,1,0
+Priority,41,joint pain,5,7,0,0,1,1,1,0
+Priority,41,dizziness,33,5,0,0,0,0,1,0
+Routine,62,sore throat,25,1,1,1,0,0,0,0
+Routine,68,joint pain,2,0,0,0,1,0,1,0
+Priority,5,urinary symptoms,15,10,0,0,0,0,0,0
+Urgent,79,sore throat,288,9,1,1,0,1,0,0
+Routine,27,skin rash,172,1,0,0,0,0,0,0
+Routine,7,joint pain,29,0,0,0,0,0,1,0
+Urgent,12,sore throat,1033,9,1,0,0,1,0,0
+Urgent,72,fever,8,9,0,0,0,0,1,0
+Routine,62,cough,785,2,1,0,0,0,0,0
+Priority,50,urinary symptoms,1202,10,0,0,0,0,0,0
+Routine,58,abdominal pain,315,1,0,1,0,0,0,0
+Routine,25,minor injury,15,0,0,0,0,0,0,0
+Priority,55,fever,39,2,1,0,0,1,1,0
+Priority,71,fatigue,63,9,0,0,0,0,0,0
+Routine,90,dizziness,13,4,0,0,0,0,0,0
+Priority,58,dizziness,34,8,0,0,0,0,0,0
+Priority,87,urinary symptoms,2,6,0,0,1,0,0,0
+Routine,27,headache,66,2,0,0,1,0,0,1
+Routine,36,ear pain,180,1,0,0,0,0,0,0
+Urgent,60,dizziness,40,7,0,0,1,1,1,0
+Routine,58,fatigue,33,7,0,0,0,0,0,0
+Priority,6,minor injury,396,4,0,0,0,0,0,1
+Routine,11,dizziness,12,6,1,0,0,0,0,0
+Priority,46,joint pain,2,7,0,0,0,0,0,0
+Urgent,88,diarrhoea,214,4,1,1,0,1,1,0
+Priority,12,skin rash,87,9,0,0,0,1,1,0
+Priority,43,minor injury,1021,6,1,0,0,0,0,0
+Routine,5,back pain,222,4,0,0,0,0,0,1
+Routine,38,joint pain,545,2,0,0,1,0,0,0
+Priority,58,abdominal pain,4,9,0,0,0,0,0,0
+Routine,64,cough,37,9,1,0,0,0,0,0
+Priority,66,back pain,177,8,0,0,0,0,0,1
+Priority,11,fatigue,382,9,0,0,1,1,0,0
+Urgent,67,urinary symptoms,27,8,0,0,0,0,1,0
+Priority,49,abdominal pain,1184,2,0,0,0,1,0,0
+Priority,23,urinary symptoms,4,4,0,0,0,0,0,0
+Urgent,59,minor injury,219,9,0,0,0,1,0,0
+Routine,48,diarrhoea,316,0,0,1,0,0,0,0
+Priority,69,dizziness,10,4,0,0,1,0,1,0
+Priority,53,cough,47,8,1,0,0,1,0,0
+Priority,17,abdominal pain,273,9,0,0,0,0,0,0
+Routine,17,minor injury,22,0,0,0,0,1,0,0
+Urgent,5,cough,13,10,1,1,0,1,0,0
+Urgent,14,joint pain,713,10,1,0,0,0,1,0
+Routine,59,joint pain,15,2,0,0,0,0,0,0
+Routine,35,cough,181,4,1,0,0,0,0,0
+Routine,26,vomiting,26,0,0,1,0,0,0,0
+Routine,23,minor injury,17,0,0,0,0,0,0,0
+Urgent,74,abdominal pain,13,5,0,1,0,0,1,0
+Urgent,8,joint pain,26,9,0,0,1,1,0,0
+Urgent,70,fever,29,7,1,0,0,1,1,0
+Urgent,47,dizziness,244,9,1,0,0,1,0,0
+Routine,38,dizziness,942,0,0,0,1,0,1,0
+Routine,78,sore throat,215,0,1,0,0,0,0,0
+Routine,59,abdominal pain,18,2,1,0,0,0,0,0
+Routine,67,abdominal pain,134,3,0,0,0,0,0,0
+Routine,71,back pain,3,1,0,0,0,0,0,0
+Routine,53,joint pain,6,1,0,0,0,1,0,0
+Priority,45,dizziness,2,9,0,0,0,1,0,0
+Priority,22,back pain,243,3,0,0,0,1,0,0
+Priority,32,diarrhoea,54,8,1,1,0,0,0,0
+Routine,56,headache,12,6,0,0,0,0,0,0
+Routine,51,dizziness,26,3,0,0,1,0,0,0
+Routine,8,minor injury,26,0,0,0,0,0,1,1
+Priority,50,vomiting,27,3,0,1,0,1,0,0
+Urgent,70,vomiting,1195,9,0,0,0,0,1,0
+Priority,38,cough,506,1,1,0,1,1,0,0
+Urgent,47,vomiting,191,8,0,1,1,1,0,1
+Priority,84,sore throat,40,10,0,0,0,1,0,1
+Priority,23,skin rash,33,5,1,0,0,0,1,0
+Routine,39,back pain,272,2,0,0,0,0,0,0
+Routine,16,abdominal pain,2,2,0,1,0,0,1,0
+Routine,9,skin rash,40,1,0,0,0,0,0,0
+Routine,33,skin rash,297,1,0,0,0,0,0,0
+Urgent,7,fever,9,9,1,0,0,1,0,0
+Routine,38,joint pain,5,4,0,0,1,0,0,0
+Priority,89,abdominal pain,218,0,0,0,0,1,0,0
+Priority,22,vomiting,107,7,1,1,0,1,0,0
+Urgent,72,abdominal pain,19,5,1,1,0,0,1,0
+Routine,49,dizziness,194,2,0,0,1,0,0,0
+Priority,88,abdominal pain,7,1,0,0,0,0,0,0
+Routine,32,fever,612,7,1,0,0,0,0,1
+Priority,53,sore throat,23,9,1,0,0,0,0,0
+Priority,21,minor injury,262,5,0,0,0,0,1,1
+Priority,59,skin rash,196,6,0,0,1,1,0,0
+Urgent,81,headache,24,9,0,0,1,0,0,1
+Urgent,38,sore throat,518,8,1,0,0,1,1,0
+Routine,81,cough,251,6,1,0,0,0,1,0
+Priority,22,cough,1018,7,1,0,1,0,1,0
+Routine,14,skin rash,89,0,0,0,0,1,0,0
+Routine,27,ear pain,194,5,0,0,0,0,0,0
+Routine,21,ear pain,254,2,0,0,0,1,0,0
+Routine,88,cough,1375,0,1,0,0,0,0,0
+Routine,52,back pain,112,5,0,1,0,1,0,0
+Priority,30,diarrhoea,141,6,0,1,0,1,0,0
+Routine,22,skin rash,15,7,1,0,0,0,1,1
+Priority,83,vomiting,266,7,0,1,0,0,0,0
+Priority,74,sore throat,327,7,1,0,0,0,1,0
+Routine,52,back pain,39,1,0,0,0,0,0,0
+Urgent,60,abdominal pain,180,7,0,1,0,1,1,0
+Routine,45,skin rash,596,0,0,0,1,0,0,0
+Priority,72,vomiting,306,10,0,0,0,0,0,0
+Routine,34,headache,34,3,0,0,0,0,1,0
+Priority,18,diarrhoea,42,2,1,1,0,1,0,0
+Priority,20,fatigue,296,8,0,0,1,0,0,0
+Routine,44,cough,36,2,0,0,0,0,0,0
+Priority,16,diarrhoea,195,10,1,0,1,0,0,0
+Urgent,32,joint pain,164,10,0,0,0,1,0,0
+Priority,16,sore throat,278,8,1,0,0,0,0,0
+Priority,16,headache,2,8,0,0,0,0,1,0
+Urgent,16,dizziness,24,7,0,0,0,1,0,0
+Priority,28,vomiting,121,7,0,0,0,1,0,0
+Urgent,89,dizziness,159,5,0,0,1,0,1,0
+Priority,82,sore throat,70,5,0,0,0,0,0,0
+Urgent,75,urinary symptoms,41,7,0,1,0,1,1,0
+Routine,65,abdominal pain,47,1,0,1,0,0,0,1
+Priority,90,dizziness,33,10,0,0,0,0,0,0
+Priority,62,sore throat,175,0,1,0,0,1,0,1
+Priority,58,fatigue,153,4,1,0,1,1,0,0
+Urgent,9,fatigue,204,10,0,1,0,1,0,0
+Priority,34,vomiting,254,0,0,1,1,0,1,0
+Routine,23,dizziness,7,5,0,0,0,0,0,0
+Routine,35,vomiting,8,2,0,0,0,0,0,0
+Routine,25,joint pain,286,5,1,0,0,0,0,0
+Routine,74,fever,878,1,0,0,0,0,1,1
+Priority,85,headache,207,1,0,0,0,1,1,0
+Priority,69,headache,152,8,1,0,0,0,0,0
+Urgent,11,sore throat,1172,10,0,0,0,0,1,0
+Priority,8,minor injury,154,9,0,0,0,0,0,1
+Routine,40,joint pain,1048,0,0,0,0,1,0,0
+Routine,24,cough,19,1,1,0,0,0,0,0
+Routine,24,sore throat,21,8,1,0,0,0,0,0
+Priority,12,sore throat,264,4,1,1,0,0,0,0
+Routine,40,abdominal pain,1103,5,0,0,0,0,0,0
+Routine,60,back pain,171,2,0,0,0,0,1,0
+Priority,78,fever,83,9,1,0,0,0,0,0
+Routine,66,urinary symptoms,544,1,0,0,0,0,0,1
+Priority,44,diarrhoea,373,0,0,1,0,1,0,0
+Routine,34,fatigue,28,4,0,0,0,0,0,0
+Priority,89,fever,317,3,1,0,0,1,0,0
+Urgent,25,abdominal pain,140,8,1,1,0,1,0,0
+Priority,35,vomiting,1182,4,0,1,0,1,0,0
+Priority,52,diarrhoea,1353,1,1,1,0,0,1,0
+Routine,37,headache,324,1,0,0,0,1,0,0
+Routine,45,headache,134,1,0,0,0,1,0,0
+Routine,74,skin rash,45,1,0,0,0,1,1,0
+Urgent,81,back pain,158,6,1,0,0,1,1,0
+Routine,16,joint pain,29,1,1,0,0,0,0,0
+Priority,67,back pain,11,2,0,1,0,1,0,0
+Urgent,66,minor injury,30,6,0,0,1,1,1,0
+Priority,54,fever,321,2,0,0,1,0,1,0
+Routine,24,diarrhoea,155,2,0,1,0,0,0,0
+Urgent,7,cough,17,6,1,0,0,0,1,0
+Priority,89,back pain,43,0,0,0,0,1,1,1
+Routine,27,sore throat,31,6,1,0,0,0,0,0
+Priority,46,abdominal pain,41,4,0,0,0,1,0,0
+Priority,24,back pain,34,10,0,0,0,0,0,0
+Routine,56,fever,7,4,0,0,1,1,0,0
+Urgent,6,headache,246,10,0,1,0,1,0,0
+Priority,38,vomiting,384,2,0,1,0,1,1,0
+Priority,12,back pain,4,2,1,0,1,0,1,0
+Urgent,31,headache,9,9,0,0,1,1,0,0
+Routine,71,fatigue,37,5,0,0,0,0,1,0
+Priority,6,abdominal pain,5,4,0,0,1,1,0,0
+Priority,75,minor injury,195,1,0,0,1,0,1,0
+Priority,77,ear pain,47,9,0,0,0,0,0,0
+Priority,31,ear pain,217,8,0,0,0,0,0,0
+Priority,73,sore throat,33,1,0,0,1,0,1,0
+Priority,87,joint pain,39,1,0,1,0,1,0,0
+Priority,64,abdominal pain,8,0,0,0,0,1,0,0
+Routine,49,minor injury,43,0,0,0,0,1,0,0
+Priority,84,urinary symptoms,171,2,0,0,0,1,0,0
+Routine,50,fever,166,0,1,0,0,0,0,0
+Routine,24,cough,2,8,1,0,0,0,0,0
+Priority,46,minor injury,39,10,0,0,1,0,0,0
+Priority,34,dizziness,110,4,0,0,1,0,0,0
+Priority,87,abdominal pain,95,7,0,0,1,1,0,0
+Priority,69,urinary symptoms,878,1,0,0,1,1,1,0
+Priority,6,back pain,510,9,0,0,0,1,0,0
+Priority,29,joint pain,144,4,1,0,0,1,0,0
+Priority,29,skin rash,321,5,1,0,0,0,0,0
+Priority,38,dizziness,279,8,0,0,0,0,1,0
+Routine,29,back pain,9,8,0,0,0,1,1,0
+Priority,84,urinary symptoms,9,5,0,0,0,0,1,0
+Priority,54,diarrhoea,1235,5,0,0,0,0,0,0
+Priority,22,minor injury,4,3,1,0,0,0,0,0
+Priority,7,sore throat,271,3,0,0,0,1,0,1
+Routine,58,urinary symptoms,1244,0,1,0,0,0,0,0
+Priority,69,sore throat,31,10,1,0,0,0,0,0
+Priority,87,skin rash,31,9,0,0,0,0,1,0
+Priority,46,abdominal pain,220,9,0,0,0,0,0,0
+Routine,20,urinary symptoms,1,3,0,0,0,0,0,0
+Priority,52,vomiting,4,1,0,1,0,1,0,0
+Urgent,72,cough,37,10,1,0,0,0,0,0
+Priority,18,back pain,1380,6,0,0,0,0,0,0
+Urgent,33,fever,31,10,0,0,0,1,0,0
+Routine,74,fatigue,44,2,0,0,0,0,0,0
+Priority,59,vomiting,1352,5,0,0,0,0,0,0
+Priority,9,minor injury,55,10,0,0,0,0,1,0
+Urgent,77,cough,42,7,0,0,1,1,0,0
+Priority,46,cough,26,5,1,0,1,0,0,0
+Priority,40,cough,88,5,1,0,0,1,0,0
+Routine,42,abdominal pain,9,4,0,1,0,0,0,0
+Priority,7,vomiting,38,4,0,1,0,0,0,0
+Priority,52,urinary symptoms,251,2,1,0,1,0,0,0
+Routine,88,back pain,3,1,0,0,0,0,1,0
+Routine,12,ear pain,323,0,0,0,0,1,0,0
+Priority,87,cough,368,5,0,0,0,0,0,0
+Routine,18,fever,28,5,1,0,0,0,0,1
+Priority,54,cough,186,8,1,0,0,0,0,1
+Routine,41,sore throat,18,4,0,0,0,0,0,1
+Urgent,84,skin rash,4,10,0,0,0,1,0,0
+Priority,40,fever,66,6,1,0,0,1,0,0
+Priority,21,minor injury,40,1,0,1,1,1,0,0
+Priority,55,skin rash,9,9,0,0,0,0,0,0
+Priority,43,minor injury,29,2,0,0,0,1,0,0
+Routine,83,joint pain,14,1,0,0,0,0,0,0
+Urgent,68,vomiting,187,3,0,1,0,1,0,0
+Routine,71,back pain,59,6,1,0,0,0,0,0
+Priority,39,ear pain,39,8,0,0,0,0,0,0
+Urgent,74,sore throat,110,4,1,0,0,1,1,0
+Routine,23,joint pain,36,2,0,0,0,0,0,0
+Priority,6,urinary symptoms,217,8,1,0,0,0,0,0
+Priority,90,skin rash,254,7,0,0,0,0,1,0
+Priority,8,cough,12,5,1,0,0,0,0,0
+Routine,23,skin rash,1425,0,0,0,0,0,0,0
+Urgent,75,skin rash,44,7,1,0,0,1,1,0
+Priority,34,headache,322,5,1,0,1,0,0,0
+Routine,25,vomiting,14,1,0,0,0,0,0,0
+Urgent,74,cough,22,6,1,0,0,1,1,0
+Urgent,68,vomiting,21,5,1,0,0,1,1,0
+Routine,61,minor injury,90,3,0,0,1,1,0,0
+Routine,42,minor injury,214,8,0,0,1,0,0,0
+Routine,77,urinary symptoms,1425,9,0,0,0,0,0,0
+Priority,30,urinary symptoms,595,4,0,0,0,0,1,0
+Urgent,89,ear pain,30,10,0,0,1,1,0,0
+Priority,66,diarrhoea,38,8,0,1,1,0,0,1
+Priority,8,joint pain,5,2,0,0,0,0,0,0
+Priority,78,dizziness,310,3,0,1,1,0,0,0
+Priority,48,joint pain,70,2,0,0,1,1,0,0
+Routine,12,urinary symptoms,708,0,0,0,0,0,0,0
+Priority,56,cough,149,9,1,0,0,0,1,0
+Routine,27,cough,1367,5,1,0,0,0,0,0
+Priority,73,fatigue,313,1,1,0,1,0,1,1
+Priority,56,cough,31,0,0,0,1,1,0,0
+Priority,72,minor injury,142,3,0,0,0,0,1,0
+Routine,66,minor injury,1044,4,0,0,0,0,0,0
+Priority,32,minor injury,497,5,0,0,0,0,0,0
+Urgent,13,fever,36,3,1,0,0,1,1,0
+Priority,57,back pain,27,6,1,0,1,0,0,1
+Priority,53,fatigue,2,5,0,0,0,0,0,0
+Priority,58,back pain,386,10,0,0,0,0,0,0
+Priority,66,skin rash,26,6,0,0,0,0,0,0
+Priority,60,fever,107,1,1,0,0,1,1,0
+Priority,29,back pain,183,2,0,0,0,1,0,0
+Priority,64,abdominal pain,243,7,0,1,0,0,0,0
+Priority,5,ear pain,336,7,0,0,0,1,0,0
+Priority,27,skin rash,16,7,0,0,0,1,0,0
+Routine,19,cough,25,10,0,0,0,0,0,1
+Urgent,56,joint pain,10,10,1,1,1,1,1,0
+Priority,29,diarrhoea,354,10,1,0,0,1,0,0
+Routine,9,urinary symptoms,10,5,0,0,0,0,0,0
+Priority,78,cough,800,0,1,1,0,1,0,1
+Priority,87,fever,297,7,0,0,1,1,0,0
+Priority,61,urinary symptoms,199,5,1,0,0,0,0,0
+Urgent,61,ear pain,9,8,1,0,0,1,1,0
+Priority,28,vomiting,505,9,0,0,0,1,0,0
+Priority,61,joint pain,5,6,1,0,0,0,1,0
+Routine,51,back pain,99,3,0,0,0,0,0,0
+Routine,24,sore throat,42,3,1,0,0,0,0,0
+Routine,45,diarrhoea,71,4,0,1,0,0,0,1
+Priority,42,fatigue,96,8,0,0,1,1,1,0
+Urgent,52,sore throat,271,2,1,0,0,1,1,0
+Urgent,82,urinary symptoms,282,10,0,0,0,0,0,0
+Urgent,80,diarrhoea,27,8,0,0,0,1,1,0
+Priority,14,joint pain,1,8,0,0,0,0,0,0
+Priority,65,ear pain,282,3,0,0,0,1,1,0
+Priority,66,minor injury,202,4,0,0,0,0,0,0
+Routine,88,skin rash,30,2,0,0,0,0,1,0
+Priority,38,fever,53,9,1,1,0,0,0,1
+Urgent,60,headache,79,8,1,0,0,1,1,0
+Urgent,71,abdominal pain,45,9,0,1,0,0,1,0
+Priority,19,dizziness,11,8,0,0,0,0,1,0
+Priority,69,vomiting,44,9,0,0,0,0,1,0
+Urgent,65,fever,812,10,0,0,0,1,0,0
+Urgent,23,urinary symptoms,24,8,0,0,1,0,1,0
+Priority,15,urinary symptoms,305,2,0,0,1,1,1,0
+Priority,74,cough,37,2,1,0,0,0,0,0
+Routine,30,cough,25,2,1,0,0,0,0,0
+Routine,12,cough,4,7,0,0,0,0,0,0
+Routine,53,diarrhoea,48,4,0,1,0,0,0,0
+Routine,64,abdominal pain,42,0,0,0,0,1,1,0
+Priority,57,diarrhoea,61,8,0,0,1,0,1,0
+Routine,80,minor injury,1185,0,0,0,0,0,0,1
+Priority,22,back pain,29,1,1,0,0,1,0,0
+Routine,32,cough,505,5,1,1,0,0,0,0
+Urgent,54,minor injury,127,3,0,1,0,1,1,0
+Priority,9,urinary symptoms,3,1,1,0,0,0,1,0
+Routine,49,ear pain,24,2,1,0,0,0,0,0
+Urgent,9,abdominal pain,78,10,1,0,0,1,0,0
+Routine,49,back pain,44,0,0,0,0,1,0,0
+Urgent,22,back pain,837,9,0,0,0,0,0,0
+Routine,34,urinary symptoms,111,7,0,0,0,0,0,0
+Routine,43,skin rash,34,3,0,0,0,0,0,0
+Routine,57,abdominal pain,1342,3,0,0,0,0,0,1
+Priority,64,dizziness,23,10,1,0,0,0,0,0
+Urgent,13,diarrhoea,32,7,0,0,0,0,0,0
+Routine,22,abdominal pain,70,3,0,1,0,0,0,0
+Routine,61,minor injury,1339,0,0,0,0,1,0,0
+Routine,36,urinary symptoms,87,7,0,0,0,0,1,0
+Urgent,32,vomiting,38,9,0,0,0,1,0,0
+Routine,12,abdominal pain,22,7,0,1,0,0,0,0
+Priority,37,headache,179,10,0,0,1,1,0,0
+Urgent,84,fatigue,13,7,0,0,0,0,1,0
+Routine,47,fever,10,5,1,0,0,0,1,0
+Priority,19,back pain,33,2,0,0,0,1,0,0
+Priority,56,minor injury,41,7,1,0,0,0,0,0
+Priority,87,fatigue,269,0,1,0,1,1,1,0
+Priority,30,minor injury,45,6,0,0,0,1,0,0
+Priority,48,dizziness,17,9,0,0,0,0,0,0
+Routine,25,skin rash,257,3,0,1,1,0,0,1
+Routine,79,joint pain,32,5,0,0,0,0,0,1
+Priority,85,urinary symptoms,2,8,0,0,0,0,0,0
+Urgent,64,vomiting,103,8,0,0,0,0,1,0
+Priority,17,skin rash,112,8,0,0,1,0,0,0
+Priority,27,joint pain,9,3,0,1,0,1,0,0
+Routine,16,minor injury,300,9,0,0,0,0,0,0
+Urgent,13,ear pain,331,6,0,0,0,1,1,0
+Priority,83,abdominal pain,249,6,0,1,1,0,1,1
+Routine,23,dizziness,990,0,0,0,1,1,0,0
+Priority,40,abdominal pain,498,2,1,0,0,0,0,0
+Priority,64,headache,13,1,0,0,1,0,0,0
+Priority,59,vomiting,28,3,0,1,0,0,0,0
+Priority,30,fever,33,7,1,0,0,0,0,0
+Routine,52,urinary symptoms,29,5,0,0,0,0,0,1
+Urgent,28,cough,111,8,1,0,0,0,1,0
+Priority,67,headache,579,5,0,0,1,0,1,0
+Routine,40,minor injury,45,3,0,0,0,0,0,0
+Priority,16,joint pain,167,10,1,0,0,1,0,0
+Routine,86,vomiting,13,1,0,1,0,0,1,0
+Routine,41,fatigue,139,2,0,1,0,0,1,0
+Priority,16,fatigue,287,10,0,1,0,0,0,0
+Priority,52,ear pain,31,4,0,0,1,0,1,0
+Urgent,70,diarrhoea,289,5,1,0,0,1,1,0
+Urgent,39,urinary symptoms,20,8,0,1,0,1,0,0
+Routine,32,ear pain,19,6,0,0,0,0,0,0
+Routine,17,skin rash,22,3,0,0,1,0,1,1
+Urgent,81,cough,32,10,1,0,0,1,0,0
+Urgent,8,fatigue,1183,7,0,1,1,1,0,0
+Urgent,18,dizziness,740,7,0,1,1,1,1,0
+Priority,36,cough,40,10,1,0,0,0,1,0
+Priority,55,urinary symptoms,13,9,0,0,0,0,1,0
+Urgent,54,headache,128,8,0,0,1,0,1,0
+Routine,32,skin rash,8,5,0,0,0,0,0,0
+Priority,58,vomiting,18,3,0,1,0,0,0,0
+Priority,43,urinary symptoms,42,5,1,0,0,1,1,1
+Priority,72,joint pain,22,2,1,1,0,0,1,0
+Routine,13,headache,32,0,0,1,1,1,1,1
+Routine,34,fatigue,262,4,0,0,1,0,1,0
+Routine,33,headache,9,7,0,0,1,0,0,0
+Routine,31,abdominal pain,90,6,0,0,0,0,0,0
+Routine,49,joint pain,269,1,0,0,0,0,0,0
+Urgent,55,cough,43,4,0,0,0,1,0,0
+Priority,54,fever,30,9,1,0,0,0,0,0
+Routine,23,ear pain,4,3,0,0,0,0,1,0
+Priority,50,fatigue,1146,5,0,1,0,0,0,0
+Routine,55,vomiting,19,1,0,0,0,0,0,0
+Priority,61,fever,32,7,1,0,0,0,1,0
+Urgent,71,abdominal pain,185,7,0,0,1,1,0,0
+Routine,49,back pain,3,1,1,0,1,0,0,0
+Routine,20,skin rash,208,1,0,0,0,1,0,0
+Routine,63,back pain,33,3,0,0,0,0,0,0
+Priority,62,fever,61,7,1,0,0,1,1,0
+Priority,57,dizziness,317,6,0,0,1,0,0,0
+Priority,74,fever,328,4,0,0,0,0,1,0
+Priority,72,minor injury,1304,2,1,0,0,0,1,0
+Routine,15,abdominal pain,27,0,1,0,1,0,0,0
+Priority,29,dizziness,202,5,0,0,1,1,0,0
+Routine,39,fatigue,43,2,0,0,1,0,0,0
+Priority,15,skin rash,470,8,1,0,0,0,0,1
+Priority,74,diarrhoea,9,6,0,1,0,0,0,0
+Priority,27,back pain,1227,4,0,0,1,1,0,1
+Routine,43,urinary symptoms,472,1,0,0,0,0,0,0
+Routine,29,diarrhoea,12,5,0,0,1,0,0,1
+Routine,80,diarrhoea,20,5,0,0,1,0,0,0
+Routine,49,urinary symptoms,1388,0,0,1,0,1,0,0
+Priority,52,dizziness,105,8,0,0,1,0,1,0
+Routine,47,cough,8,5,1,0,1,0,0,0
+Routine,70,sore throat,13,4,1,0,0,0,1,0
+Priority,31,cough,564,2,0,0,0,1,0,0
+Routine,44,dizziness,43,2,0,0,0,0,0,0
+Routine,13,cough,62,0,0,0,0,0,0,0
+Priority,66,skin rash,1288,3,0,0,0,0,1,0
+Priority,84,diarrhoea,25,3,0,0,0,0,1,0
+Routine,42,vomiting,4,1,1,1,0,0,0,0
+Urgent,60,minor injury,36,8,1,0,0,1,1,0
+Routine,32,cough,46,5,0,0,0,0,1,0
+Routine,40,dizziness,457,1,1,0,0,1,0,0
+Priority,40,back pain,327,8,0,0,0,1,0,0
+Urgent,10,abdominal pain,25,10,1,0,1,0,0,0
+Urgent,80,fever,197,8,1,0,0,1,0,0
+Routine,33,vomiting,142,0,0,1,0,0,0,0
+Routine,25,abdominal pain,9,1,0,1,0,0,0,0
+Urgent,59,urinary symptoms,15,10,0,0,1,1,1,0
+Urgent,5,abdominal pain,22,2,1,0,0,1,0,0
+Priority,56,minor injury,289,9,0,0,0,1,0,0
+Priority,30,back pain,7,7,0,0,0,1,1,1
+Routine,19,sore throat,166,1,1,0,0,0,1,0
+Routine,46,joint pain,48,2,0,0,0,1,0,0
+Routine,7,skin rash,16,7,0,0,0,0,0,1
+Routine,34,cough,91,1,1,0,0,0,0,0
+Routine,54,fatigue,56,7,0,0,1,0,0,0
+Priority,70,joint pain,187,2,0,0,0,0,1,0
+Routine,64,diarrhoea,47,0,0,0,0,0,1,0
+Priority,64,fever,17,10,1,1,0,0,1,1
+Priority,38,abdominal pain,107,5,0,1,0,0,0,0
+Priority,67,back pain,869,10,0,0,0,0,0,0
+Priority,29,joint pain,11,5,1,0,0,1,0,0
+Priority,56,diarrhoea,113,10,0,1,0,0,0,0
+Routine,49,back pain,9,5,0,0,0,0,0,0
+Routine,73,joint pain,16,4,0,1,1,0,0,0
+Routine,89,dizziness,21,1,0,0,1,0,0,0
+Routine,36,headache,58,2,0,0,0,0,0,0
+Priority,65,dizziness,331,8,0,0,0,0,1,0
+Priority,13,urinary symptoms,255,3,0,0,0,0,1,0
+Routine,36,vomiting,79,3,0,1,0,0,0,1
+Priority,50,minor injury,771,8,0,0,1,1,1,0
+Routine,52,abdominal pain,240,0,0,0,0,0,0,0
+Routine,77,headache,9,1,1,0,0,0,0,0
+Priority,80,minor injury,189,7,0,0,1,0,0,1
+Priority,49,sore throat,160,9,0,0,0,0,0,0
+Routine,39,headache,229,0,0,0,1,0,0,0
+Routine,13,dizziness,22,4,0,0,1,0,0,0
+Priority,46,joint pain,1070,8,0,0,1,0,0,0
+Priority,87,abdominal pain,11,1,0,0,1,1,1,0
+Priority,29,ear pain,251,5,1,0,0,1,0,0
+Routine,9,joint pain,35,1,0,0,0,0,0,0
+Priority,54,dizziness,40,1,0,1,0,1,1,0
+Priority,44,diarrhoea,521,7,0,1,0,0,1,0
+Priority,61,cough,10,2,1,0,0,1,1,0
+Priority,81,back pain,277,9,0,0,1,0,0,0
+Priority,90,fatigue,7,5,0,0,0,0,0,0
+Priority,9,ear pain,10,7,0,0,1,1,0,0
+Priority,76,vomiting,246,0,1,0,0,0,1,0
+Routine,56,sore throat,32,0,0,0,0,0,0,1
+Routine,44,fatigue,20,4,0,0,1,0,0,0
+Priority,81,ear pain,121,3,1,0,1,1,0,0
+Priority,89,cough,379,2,0,0,0,0,1,0
+Routine,50,skin rash,266,3,0,0,0,0,0,0
+Priority,90,sore throat,313,7,1,1,0,0,1,0
+Routine,89,back pain,4,3,1,0,0,0,0,0
+Urgent,84,diarrhoea,787,7,0,1,0,1,0,0
+Routine,11,diarrhoea,29,4,0,1,0,1,0,0
+Priority,88,skin rash,38,7,0,0,0,0,0,0
+Priority,9,ear pain,31,3,0,0,0,0,0,0
+Priority,72,dizziness,101,6,1,1,1,0,0,0
+Priority,31,vomiting,1354,5,0,1,0,1,0,0
+Urgent,71,dizziness,627,5,0,0,0,1,0,0
+Priority,82,joint pain,645,0,1,0,1,0,1,0
+Priority,49,urinary symptoms,221,2,0,0,0,1,1,0
+Routine,85,headache,4,4,0,0,1,0,0,0
+Priority,56,cough,22,10,1,0,0,0,0,1
+Priority,23,ear pain,27,1,0,1,0,1,0,0
+Priority,15,vomiting,48,1,1,1,0,0,1,0
+Priority,7,headache,44,10,0,0,1,0,0,0
+Priority,23,headache,170,5,0,0,0,1,1,0
+Routine,58,headache,26,6,0,1,1,0,0,0
+Priority,22,abdominal pain,570,6,0,0,0,0,0,0
+Priority,84,headache,6,2,0,0,0,1,0,0
+Urgent,88,fever,277,7,1,1,0,0,1,0
+Routine,38,minor injury,251,10,0,0,0,0,0,0
+Routine,51,fever,287,6,1,0,0,0,0,0
+Routine,42,cough,304,1,0,0,0,1,0,0
+Priority,38,fever,263,6,1,0,0,0,0,0
+Priority,80,sore throat,1248,6,0,0,0,0,1,0
+Urgent,52,fatigue,18,8,0,0,1,1,0,0
+Urgent,69,minor injury,34,10,0,0,0,1,1,0
+Routine,80,fever,291,0,1,0,0,0,1,1
+Routine,43,urinary symptoms,32,8,0,0,0,0,0,0
+Urgent,57,dizziness,176,10,1,0,0,0,0,0
+Priority,73,minor injury,38,8,0,0,0,1,0,0
+Routine,54,skin rash,307,7,0,0,0,0,0,0
+Routine,19,abdominal pain,28,4,0,1,0,0,0,0
+Priority,35,minor injury,95,5,0,1,0,1,1,0
+Routine,50,fever,27,5,1,0,0,0,0,0
+Urgent,83,sore throat,190,8,1,0,0,0,1,0
+Priority,43,diarrhoea,93,2,0,0,1,1,1,0
+Urgent,62,cough,80,6,1,0,1,1,1,0
+Priority,63,back pain,238,8,0,1,0,1,0,0
+Priority,81,dizziness,13,7,0,0,0,0,0,0
+Priority,20,headache,14,6,0,0,0,0,0,0
+Priority,58,joint pain,33,10,0,0,0,0,0,0
+Urgent,90,abdominal pain,192,0,1,0,0,1,1,0
+Urgent,69,dizziness,197,9,0,0,1,0,1,1
+Routine,29,fatigue,48,0,0,0,0,0,0,0
+Priority,85,back pain,103,10,0,0,0,0,1,0
+Routine,45,headache,113,1,0,0,0,0,0,0
+Priority,77,back pain,2,1,0,0,1,0,0,0
+Routine,55,diarrhoea,5,4,0,0,0,0,0,0
+Routine,80,ear pain,23,4,0,0,0,0,0,0
+Priority,77,back pain,270,2,0,0,0,0,0,0
+Routine,34,fatigue,1315,4,0,0,0,0,0,0
+Urgent,71,abdominal pain,205,6,0,1,0,0,0,0
+Priority,79,skin rash,1172,8,0,0,0,0,1,0
+Priority,85,urinary symptoms,390,5,0,0,0,0,1,0
+Priority,64,skin rash,61,1,0,1,0,0,1,0
+Routine,19,minor injury,12,1,0,0,0,1,0,0
+Priority,17,skin rash,305,9,0,0,0,0,0,0
+Priority,58,fever,161,1,0,0,0,1,1,0
+Priority,12,headache,840,8,0,0,0,0,0,0
+Routine,66,fatigue,97,2,0,0,0,0,1,0
+Urgent,84,skin rash,144,10,0,0,0,0,1,0
+Priority,59,fatigue,85,5,0,0,0,1,0,0
+Priority,42,vomiting,58,0,0,1,0,1,0,1
+Priority,21,urinary symptoms,155,4,0,0,0,1,1,0
+Priority,28,vomiting,322,4,0,1,0,1,0,0
+Routine,56,diarrhoea,183,2,0,1,0,0,0,0
+Routine,17,diarrhoea,225,1,0,1,0,0,0,0
+Priority,7,skin rash,278,4,0,0,0,1,0,0
+Priority,10,skin rash,49,7,0,0,0,0,1,0
+Priority,83,fever,297,5,1,0,0,1,0,0
+Urgent,7,fatigue,1343,8,0,0,1,1,1,0
+Routine,26,joint pain,28,5,0,1,1,0,0,0
+Priority,85,sore throat,191,6,0,1,0,1,0,0
+Priority,57,vomiting,79,4,0,0,0,1,0,0
+Urgent,58,abdominal pain,37,4,0,0,0,1,1,0
+Priority,72,skin rash,233,0,0,0,0,0,1,0
+Routine,50,dizziness,20,1,0,0,1,0,0,0
+Routine,31,cough,148,6,0,0,1,0,0,0
+Routine,24,abdominal pain,152,0,0,0,0,1,0,0
+Routine,83,ear pain,17,1,1,0,0,0,1,0
+Routine,12,minor injury,103,5,0,0,0,0,0,0
+Urgent,69,headache,248,4,0,0,1,1,1,0
+Urgent,55,abdominal pain,750,7,0,1,0,1,0,0
+Routine,29,joint pain,1102,8,1,0,0,0,0,0
+Routine,88,dizziness,100,2,0,0,1,0,0,0
+Priority,66,diarrhoea,42,0,0,1,1,1,0,0
+Routine,69,urinary symptoms,126,1,0,0,0,0,1,0
+Priority,11,vomiting,873,8,0,1,0,0,0,0
+Urgent,69,dizziness,100,7,1,0,0,1,0,0
+Priority,41,back pain,2,9,0,0,0,0,0,0
+Routine,51,diarrhoea,654,0,0,1,0,1,0,0
+Priority,73,fever,59,7,1,0,0,1,0,0
+Priority,46,ear pain,222,1,1,0,0,0,1,0
+Priority,18,cough,494,3,1,0,0,1,0,0
+Priority,67,urinary symptoms,73,9,0,0,0,0,1,1
+Priority,30,dizziness,122,8,1,0,1,0,0,0
+Priority,67,back pain,116,1,1,1,0,0,1,0
+Routine,33,vomiting,39,4,1,1,0,0,0,0
+Priority,16,minor injury,24,6,0,0,0,1,0,0
+Routine,47,fever,329,5,0,0,0,0,0,0
+Urgent,73,skin rash,271,9,0,0,0,0,1,0
+Priority,29,fatigue,24,5,0,1,0,1,0,0
+Routine,25,minor injury,92,6,0,0,0,0,1,1
+Routine,29,dizziness,12,4,0,0,0,0,0,0
+Priority,79,sore throat,186,5,1,0,0,0,0,0
+Priority,90,fatigue,41,7,0,0,0,0,1,0
+Routine,28,urinary symptoms,9,2,0,0,0,1,0,0
+Routine,47,fever,784,2,1,0,0,0,0,0
+Priority,69,cough,595,4,0,1,0,0,1,0
+Priority,67,skin rash,31,7,0,0,0,1,0,0
+Priority,44,diarrhoea,775,7,0,1,0,0,1,0
+Priority,63,urinary symptoms,1382,9,1,0,0,1,0,1
+Routine,50,sore throat,635,1,1,0,0,0,1,0
+Priority,32,vomiting,296,7,0,0,0,0,0,0
+Routine,53,skin rash,288,3,1,0,0,0,0,0
+Routine,11,minor injury,136,6,0,0,1,0,1,0
+Urgent,24,vomiting,73,9,0,0,0,1,0,0
+Priority,37,joint pain,44,10,1,0,0,0,0,0
+Priority,54,dizziness,234,3,0,0,1,0,0,0
+Urgent,44,dizziness,132,9,0,0,0,1,0,0
+Routine,25,sore throat,138,8,1,0,0,0,0,1
+Routine,47,minor injury,19,0,0,0,0,0,1,0
+Urgent,18,dizziness,36,10,0,0,1,0,0,0
+Urgent,47,vomiting,178,10,1,0,0,1,0,0
+Routine,48,cough,47,1,1,0,0,0,0,0
+Urgent,27,abdominal pain,848,5,1,1,0,1,0,0
+Routine,16,vomiting,101,2,0,0,0,0,0,0
+Routine,19,skin rash,79,1,0,0,0,0,0,0
+Routine,48,urinary symptoms,37,4,0,1,0,0,0,0
+Routine,10,diarrhoea,947,8,0,0,0,0,0,0
+Priority,75,vomiting,38,4,0,1,0,0,1,0
+Priority,36,ear pain,153,8,0,1,0,0,1,0
+Routine,52,urinary symptoms,553,6,0,0,1,0,0,0
+Priority,55,cough,34,9,0,1,0,0,1,0
+Urgent,20,headache,34,10,0,0,0,1,0,0
+Routine,23,back pain,127,2,1,0,0,0,0,0
+Priority,60,ear pain,207,7,0,0,0,0,0,0
+Urgent,73,ear pain,36,10,0,0,0,1,1,0
+Routine,68,fatigue,32,1,0,0,1,0,0,0
+Urgent,85,abdominal pain,832,7,0,0,0,1,1,0
+Priority,41,fever,12,4,0,0,0,1,0,0
+Priority,38,dizziness,106,0,0,0,1,1,0,0
+Urgent,66,abdominal pain,11,6,0,1,0,1,0,0
+Priority,57,vomiting,14,6,1,1,0,0,0,0
+Urgent,69,skin rash,132,4,0,1,0,1,0,0
+Routine,84,fatigue,43,2,0,0,1,0,1,0
+Urgent,64,sore throat,1361,6,1,0,0,1,1,0
+Priority,9,vomiting,48,7,0,1,0,0,0,1
+Priority,13,headache,31,9,0,0,1,0,0,0
+Priority,82,minor injury,401,0,0,1,0,1,1,0
+Urgent,81,diarrhoea,769,9,0,1,1,0,0,0
+Priority,48,diarrhoea,46,0,1,0,0,1,0,0
+Priority,8,sore throat,520,0,0,0,0,1,1,1
+Urgent,69,fever,711,1,1,0,0,1,1,0
+Routine,59,fatigue,1103,0,1,1,0,0,1,0
+Priority,68,skin rash,10,7,0,0,0,1,1,1
+Priority,24,minor injury,44,10,0,0,0,0,0,0
+Routine,64,fatigue,22,2,1,0,0,0,0,0
+Routine,41,sore throat,24,5,0,0,0,0,0,0
+Priority,14,cough,54,8,1,0,0,0,0,0
+Routine,26,joint pain,79,3,0,0,0,1,0,0
+Routine,19,dizziness,562,8,0,0,1,0,0,0
+Routine,51,dizziness,184,1,0,0,1,0,1,0
+Priority,13,fever,255,6,1,0,0,1,0,0
+Urgent,12,cough,32,8,0,0,0,1,0,0
+Priority,40,fatigue,6,5,0,0,0,0,0,0
+Priority,62,dizziness,156,8,0,0,1,0,1,0
+Urgent,80,abdominal pain,465,10,0,0,0,1,0,0
+Routine,33,vomiting,43,4,0,0,0,0,0,1
+Priority,60,dizziness,19,6,0,0,1,0,1,1
+Priority,40,minor injury,1390,8,0,0,0,1,0,0
+Routine,23,vomiting,1041,2,0,1,0,0,0,0
+Priority,8,fever,31,10,0,0,0,0,0,0
+Urgent,76,sore throat,274,10,1,0,0,0,1,0
+Urgent,80,sore throat,16,1,1,0,0,1,1,1
+Priority,72,diarrhoea,25,3,0,1,0,0,0,0
+Urgent,72,vomiting,21,9,0,1,0,1,1,0
+Priority,31,dizziness,37,3,0,0,1,1,0,0
+Urgent,82,back pain,23,6,0,0,0,1,1,0
+Priority,14,cough,235,1,1,0,0,1,1,0
+Priority,26,headache,769,8,0,0,0,0,0,0
+Routine,82,joint pain,18,6,0,0,0,0,1,0
+Priority,45,fatigue,129,7,0,0,1,0,1,0
+Routine,27,headache,47,0,0,0,1,0,0,0
+Routine,83,dizziness,33,0,1,0,1,0,1,0
+Priority,6,abdominal pain,44,10,0,0,0,0,0,0
+Priority,69,fatigue,19,5,1,0,1,0,1,0
+Routine,23,vomiting,22,2,0,1,0,0,0,0
+Priority,76,fever,35,4,1,1,0,0,0,1
+Routine,57,sore throat,21,3,1,0,0,0,0,0
+Priority,33,fatigue,332,7,1,0,1,0,0,0
+Priority,83,diarrhoea,33,3,0,0,0,1,1,0
+Priority,35,abdominal pain,303,7,0,0,0,0,0,0
+Routine,52,cough,130,6,1,0,0,0,0,1
+Priority,85,minor injury,317,3,1,0,0,0,0,0
+Urgent,19,fever,47,10,1,1,0,0,0,0
+Routine,7,fever,46,0,0,0,0,0,0,0
+Routine,39,sore throat,77,1,1,0,0,0,0,1
+Priority,87,fatigue,205,1,0,0,0,0,1,0
+Priority,78,fatigue,278,3,1,0,0,0,1,0
+Priority,32,minor injury,1374,0,0,0,0,0,0,1
+Routine,67,joint pain,77,1,0,0,0,0,0,0
+Urgent,49,ear pain,1344,10,1,0,1,0,0,0
+Priority,55,diarrhoea,21,7,0,1,0,0,0,0
+Routine,88,minor injury,38,2,0,0,0,0,1,0
+Priority,87,fever,172,0,1,0,0,0,1,0
+Urgent,65,cough,42,10,1,0,1,0,1,0
+Priority,78,diarrhoea,23,3,0,0,0,1,1,0
+Priority,30,headache,2,3,0,0,1,1,0,0
+Routine,64,ear pain,40,0,0,0,0,0,0,0
+Priority,37,abdominal pain,720,6,0,0,0,0,0,0
+Urgent,72,abdominal pain,12,6,0,0,0,1,0,0
+Priority,77,vomiting,16,5,0,1,1,0,0,0
+Priority,35,abdominal pain,161,9,1,0,0,0,0,1
+Priority,30,back pain,144,9,0,0,0,1,0,1
+Priority,74,dizziness,329,8,0,0,0,0,0,0
+Priority,28,dizziness,4,8,0,0,0,0,0,1
+Routine,15,abdominal pain,158,2,0,0,0,1,0,0
+Priority,85,vomiting,76,1,0,0,0,1,0,0
+Routine,7,dizziness,41,3,0,0,1,0,0,0
+Priority,15,cough,148,8,0,0,0,1,0,0
+Priority,12,cough,44,5,1,0,0,0,0,0
+Priority,46,vomiting,38,7,0,1,1,0,0,0
+Priority,59,cough,52,8,1,0,0,0,0,0
+Routine,55,joint pain,446,2,0,1,0,0,0,0
+Priority,74,dizziness,43,5,0,0,0,0,1,0
+Routine,50,minor injury,47,3,0,1,1,0,0,0
+Routine,26,minor injury,329,1,0,0,0,0,0,0
+Priority,56,fatigue,104,8,1,0,1,0,1,0
+Priority,89,abdominal pain,18,5,0,1,0,0,1,1
+Urgent,60,vomiting,12,9,0,1,1,1,0,0
+Routine,7,cough,243,0,1,0,0,0,0,0
+Priority,45,abdominal pain,1023,4,0,1,0,0,1,0
+Urgent,36,dizziness,243,10,0,0,0,1,0,0
+Priority,63,ear pain,843,3,1,1,1,0,1,0
+Priority,82,diarrhoea,182,5,0,0,0,1,0,0
+Routine,35,minor injury,1226,6,1,0,0,0,0,0
+Priority,55,back pain,197,2,0,0,0,1,1,0
+Priority,31,cough,285,8,1,0,0,0,0,0
+Routine,59,cough,212,0,1,0,0,0,0,1
+Routine,18,sore throat,17,0,0,0,0,0,0,0
+Priority,86,headache,385,6,0,0,0,0,0,0
+Priority,83,vomiting,183,2,0,1,1,1,0,0
+Priority,87,vomiting,81,1,0,1,0,0,0,0
+Priority,26,headache,18,5,0,0,1,1,0,0
+Priority,62,dizziness,665,3,0,0,1,0,1,0
+Urgent,30,ear pain,152,10,0,0,0,0,1,0
+Priority,17,headache,19,5,0,0,1,0,0,0
+Priority,46,sore throat,133,6,0,0,0,1,1,0
+Urgent,65,headache,178,8,0,0,1,1,1,0
+Routine,7,sore throat,1307,4,1,0,0,0,0,0
+Urgent,29,urinary symptoms,2,7,0,1,0,1,0,1
+Routine,19,skin rash,232,3,0,0,0,1,0,0
+Priority,88,cough,37,2,0,0,0,1,0,0
+Urgent,10,back pain,187,6,1,0,1,0,1,0
+Urgent,74,skin rash,1010,2,0,0,0,0,1,0
+Urgent,87,fever,735,10,1,0,0,0,1,0
+Priority,47,diarrhoea,38,5,0,0,0,1,0,0
+Urgent,73,skin rash,171,7,0,0,0,1,1,0
+Priority,82,vomiting,152,4,1,1,0,0,1,0
+Routine,18,urinary symptoms,38,9,0,0,0,0,0,0
+Routine,77,joint pain,258,4,0,0,0,0,1,1
+Routine,62,headache,336,6,0,0,1,0,0,0
+Priority,18,minor injury,974,2,0,0,1,0,0,0
+Priority,52,diarrhoea,474,7,0,1,0,0,0,0
+Urgent,74,ear pain,40,10,0,0,1,1,1,1
+Routine,18,dizziness,986,6,0,0,0,0,0,0
+Urgent,74,skin rash,38,7,0,0,0,1,0,0
+Routine,42,sore throat,82,7,1,0,0,0,0,0
+Routine,8,minor injury,13,2,0,0,0,0,0,0
+Routine,60,diarrhoea,222,4,1,1,0,0,0,0
+Priority,56,minor injury,336,8,0,0,0,0,1,0
+Priority,57,abdominal pain,276,9,1,1,1,1,1,0
+Priority,30,sore throat,1156,5,1,0,0,1,0,0
+Priority,85,diarrhoea,48,2,1,0,0,0,1,0
+Priority,52,fever,159,3,1,1,0,0,0,0
+Routine,61,diarrhoea,142,0,0,1,1,0,0,1
+Priority,78,abdominal pain,36,3,0,0,0,0,1,0
+Routine,46,urinary symptoms,272,0,1,0,1,0,0,0
+Priority,5,skin rash,221,7,0,0,0,0,0,0
+Priority,15,ear pain,23,8,0,0,1,0,1,0
+Priority,39,dizziness,2,4,0,0,1,1,0,0
+Priority,75,dizziness,314,0,0,0,1,1,0,0
+Priority,88,ear pain,1169,6,0,0,0,0,1,0
+Priority,81,joint pain,1070,5,0,0,1,0,1,0
+Priority,89,diarrhoea,66,6,0,0,0,0,0,0
+Priority,70,urinary symptoms,451,4,0,0,0,0,1,0
+Priority,43,fever,637,5,1,0,1,0,0,0
+Priority,90,headache,36,1,0,0,1,1,1,0
+Routine,44,vomiting,26,2,1,0,0,0,0,0
+Routine,61,minor injury,16,0,1,0,1,0,0,0
+Priority,18,cough,93,0,1,0,0,0,1,0
+Priority,23,diarrhoea,252,10,0,0,0,0,0,0
+Routine,38,cough,32,0,1,0,0,0,0,0
+Priority,29,dizziness,69,9,0,0,1,1,0,1
+Priority,73,cough,439,9,1,0,0,0,0,0
+Routine,45,urinary symptoms,27,1,0,0,0,0,0,0
+Routine,18,urinary symptoms,53,4,1,0,0,0,0,0
+Routine,46,ear pain,71,3,0,0,1,0,0,0
+Priority,72,back pain,28,8,0,0,0,0,0,0
+Priority,42,joint pain,227,8,1,0,0,0,0,0
+Priority,75,abdominal pain,45,6,0,1,0,0,0,1
+Routine,89,sore throat,14,1,1,0,0,0,1,0
+Routine,49,fever,45,4,0,0,0,0,1,0
+Priority,48,minor injury,200,6,0,0,0,1,0,0
+Priority,26,back pain,265,7,0,0,0,1,0,0
+Priority,87,ear pain,16,7,1,0,0,0,1,1
+Urgent,66,minor injury,260,0,0,0,0,1,1,0
+Priority,63,dizziness,322,4,1,0,0,0,0,0
+Priority,35,diarrhoea,15,9,0,1,0,0,0,0
+Priority,64,abdominal pain,1403,9,1,0,0,0,1,0
+Routine,21,back pain,14,0,1,0,0,0,0,0
+Routine,51,fever,221,4,0,0,0,0,0,0
+Priority,18,vomiting,35,7,0,0,1,0,0,0
+Routine,67,skin rash,1395,1,0,0,0,0,0,1
+Priority,57,vomiting,426,4,0,0,0,0,0,0
+Priority,36,headache,41,4,0,0,1,1,0,0
+Priority,32,minor injury,118,1,0,0,0,1,1,0
+Routine,76,sore throat,198,2,1,0,0,0,1,0
+Urgent,57,dizziness,1048,5,0,0,0,1,1,0
+Priority,22,back pain,234,8,1,0,0,0,0,0
+Urgent,44,dizziness,1041,6,0,0,1,1,0,1
+Routine,29,cough,269,3,0,0,0,0,0,0
+Urgent,48,dizziness,44,10,0,0,0,1,1,0
+Priority,16,vomiting,1394,5,0,0,0,0,1,0
+Priority,61,dizziness,1394,10,0,0,1,0,0,1
+Routine,12,minor injury,30,8,0,0,0,0,0,0
+Routine,6,ear pain,66,3,0,0,0,0,0,0
+Priority,6,minor injury,34,9,0,0,0,0,0,0
+Routine,58,ear pain,23,6,0,1,0,0,0,0
+Urgent,8,sore throat,231,7,1,0,0,1,1,0
+Routine,57,skin rash,45,5,0,0,0,0,0,0
+Priority,74,sore throat,516,2,1,0,0,0,0,0
+Priority,43,headache,41,9,0,0,0,0,0,0
+Routine,12,urinary symptoms,91,4,0,0,0,1,0,0
+Urgent,67,vomiting,242,4,0,1,1,0,1,0
+Priority,87,sore throat,260,9,0,0,0,0,1,0
+Routine,53,fatigue,43,1,1,0,0,0,0,0
+Routine,30,fatigue,32,1,0,1,1,0,0,1
+Routine,71,skin rash,92,0,0,0,0,0,0,0
+Priority,58,fever,123,4,0,0,0,1,0,0
+Priority,80,fatigue,88,4,0,0,0,1,0,0
+Priority,61,joint pain,589,6,0,0,0,0,0,0
+Priority,44,skin rash,322,7,0,0,1,1,0,1
+Priority,83,headache,317,6,0,0,1,0,1,0
+Routine,64,urinary symptoms,288,0,0,0,0,0,1,0
+Priority,80,minor injury,46,7,0,0,0,0,1,1
+Urgent,78,diarrhoea,589,7,0,0,1,1,1,0
+Routine,15,cough,914,5,1,0,0,0,1,0
+Urgent,23,diarrhoea,328,9,0,1,1,0,0,0
+Priority,28,urinary symptoms,289,6,0,1,0,0,0,0
+Routine,41,fever,894,7,0,1,0,0,0,0
+Priority,21,headache,8,6,0,0,1,0,0,0
+Priority,17,fever,108,5,0,0,1,0,0,0
+Urgent,65,diarrhoea,45,10,0,0,1,0,1,0
+Priority,80,skin rash,82,10,0,0,0,0,0,0
+Priority,62,fatigue,396,9,0,0,0,0,1,0
+Priority,61,minor injury,34,9,1,0,0,0,1,0
+Urgent,76,cough,67,10,1,0,0,0,1,1
+Routine,73,joint pain,23,1,0,0,1,0,0,0
+Routine,30,diarrhoea,331,4,0,1,0,0,0,0
+Priority,51,sore throat,1343,4,1,0,0,0,0,0
+Routine,49,sore throat,1385,0,1,0,1,0,0,0
+Routine,90,vomiting,147,7,0,1,1,0,1,0
+Priority,65,skin rash,14,7,0,0,0,0,1,1
+Routine,55,skin rash,345,6,1,0,0,0,0,0
+Priority,90,diarrhoea,5,1,0,0,0,1,0,0
+Priority,58,back pain,247,10,0,0,0,0,0,0
+Routine,9,headache,4,1,0,0,0,0,0,0
+Routine,38,skin rash,40,0,1,0,0,0,0,0
+Priority,63,fatigue,301,5,0,0,1,1,0,1
+Urgent,10,urinary symptoms,312,9,0,0,1,0,1,0
+Priority,60,dizziness,28,9,0,0,0,1,0,0
+Priority,28,dizziness,17,2,0,0,0,0,1,0
+Urgent,36,back pain,15,9,0,0,1,1,1,0
+Priority,56,minor injury,145,6,0,0,0,0,0,0
+Routine,17,diarrhoea,20,3,0,1,0,0,0,0
+Priority,56,cough,95,6,1,1,0,0,0,0
+Priority,89,vomiting,41,1,0,1,0,1,1,1
+Routine,20,back pain,521,1,0,0,0,0,0,0
+Priority,52,diarrhoea,156,2,0,0,0,0,0,0
+Routine,44,vomiting,13,2,0,0,0,0,0,1
+Priority,9,fatigue,4,0,0,0,0,0,1,0
+Routine,33,diarrhoea,5,1,0,0,0,1,0,0
+Priority,84,fatigue,22,4,0,0,1,1,0,0
+Priority,89,diarrhoea,50,2,1,1,0,0,1,0
+Routine,13,skin rash,9,3,0,0,0,0,0,0
+Routine,50,headache,34,3,0,0,1,1,0,0
+Priority,70,diarrhoea,40,7,0,0,0,0,1,0
+Priority,36,cough,4,6,1,0,1,0,0,0
+Routine,84,skin rash,1278,6,0,0,1,0,1,0
+Routine,20,fatigue,750,1,1,1,0,0,0,0
+Priority,72,diarrhoea,38,9,0,0,1,0,1,0

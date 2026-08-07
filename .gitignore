@@ -1,0 +1,28 @@
+# .NET
+**/bin/
+**/obj/
+*.user
+*.suo
+*.db
+
+# ML model generated at runtime
+src/MedicAI.Api/MachineLearning/Artifacts/*.zip
+src/MedicAI.Api/MachineLearning/Artifacts/*.json
+
+# React / Node
+**/node_modules/
+**/dist/
+*.local
+
+# Environment and secrets
+.env
+appsettings.Local.json
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

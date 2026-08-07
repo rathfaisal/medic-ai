@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicAI.Api", "src\MedicAI.Api\MedicAI.Api.csproj", "{A51D940B-04BA-4C8C-A02E-5BB249FD5EC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicAI.Tests", "src\MedicAI.Tests\MedicAI.Tests.csproj", "{ED47A4B0-DAC8-42F5-A674-BE91BE4F0A22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicAI.ModelEvaluation", "src\MedicAI.ModelEvaluation\MedicAI.ModelEvaluation.csproj", "{6A74536A-D23F-4AE7-84EC-D7282E65C248}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A51D940B-04BA-4C8C-A02E-5BB249FD5EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51D940B-04BA-4C8C-A02E-5BB249FD5EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51D940B-04BA-4C8C-A02E-5BB249FD5EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51D940B-04BA-4C8C-A02E-5BB249FD5EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED47A4B0-DAC8-42F5-A674-BE91BE4F0A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED47A4B0-DAC8-42F5-A674-BE91BE4F0A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED47A4B0-DAC8-42F5-A674-BE91BE4F0A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED47A4B0-DAC8-42F5-A674-BE91BE4F0A22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A74536A-D23F-4AE7-84EC-D7282E65C248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A74536A-D23F-4AE7-84EC-D7282E65C248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A74536A-D23F-4AE7-84EC-D7282E65C248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A74536A-D23F-4AE7-84EC-D7282E65C248}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

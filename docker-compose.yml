@@ -1,0 +1,53 @@
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: medic-ai-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-medic_ai}
+      POSTGRES_USER: ${POSTGRES_USER:-medicai}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-MedicAI_Dev_Password!}
+    ports:
+      - "5432:5432"
+    volumes:
+      - medic_ai_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-medicai} -d ${POSTGRES_DB:-medic_ai}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build:
+      context: ./src/MedicAI.Api
+      dockerfile: Dockerfile
+    container_name: medic-ai-api
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: Host=db;Port=5432;Database=${POSTGRES_DB:-medic_ai};Username=${POSTGRES_USER:-medicai};Password=${POSTGRES_PASSWORD:-MedicAI_Dev_Password!}
+      Jwt__Key: ${JWT_KEY:-ChangeThisToAVeryLongRandomSecretKeyAtLeast32Characters}
+      Jwt__Issuer: ${JWT_ISSUER:-MEDIC-AI}
+      Jwt__Audience: ${JWT_AUDIENCE:-MEDIC-AI-Web}
+    ports:
+      - "5080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./src/MedicAI.Api/MachineLearning/Artifacts:/app/MachineLearning/Artifacts
+
+  web:
+    build:
+      context: ./src/medic-ai-web
+      dockerfile: Dockerfile
+    container_name: medic-ai-web
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+
+volumes:
+  medic_ai_postgres:
