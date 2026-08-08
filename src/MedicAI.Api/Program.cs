@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -53,15 +54,76 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-if (string.IsNullOrWhiteSpace(connectionString))
+/*
+ * DATABASE CONFIGURATION
+ * ----------------------
+ * For hosted environments, MEDIC-AI now prefers separate Database__*
+ * environment variables instead of asking the host control panel to preserve
+ * one long PostgreSQL connection-string value.
+ *
+ * This also safely handles special characters in the Neon password because
+ * NpgsqlConnectionStringBuilder performs the required quoting.
+ *
+ * Local development still falls back to ConnectionStrings:DefaultConnection.
+ */
+var databaseHost = builder.Configuration["Database:Host"];
+var databaseName = builder.Configuration["Database:Name"];
+var databaseUsername = builder.Configuration["Database:Username"];
+var databasePassword = builder.Configuration["Database:Password"];
+var databasePortText = builder.Configuration["Database:Port"];
+
+string connectionString;
+string databaseConfigurationSource;
+
+if (!string.IsNullOrWhiteSpace(databaseHost) &&
+    !string.IsNullOrWhiteSpace(databaseName) &&
+    !string.IsNullOrWhiteSpace(databaseUsername) &&
+    !string.IsNullOrWhiteSpace(databasePassword))
 {
-    throw new InvalidOperationException("ConnectionStrings:DefaultConnection must be configured.");
+    var port = 5432;
+    if (!string.IsNullOrWhiteSpace(databasePortText) &&
+        int.TryParse(databasePortText, out var parsedPort) &&
+        parsedPort is > 0 and <= 65535)
+    {
+        port = parsedPort;
+    }
+
+    var connectionBuilder = new NpgsqlConnectionStringBuilder
+    {
+        Host = databaseHost.Trim(),
+        Port = port,
+        Database = databaseName.Trim(),
+        Username = databaseUsername.Trim(),
+        Password = databasePassword,
+        SslMode = SslMode.Require,
+        Pooling = true,
+        Timeout = 15,
+        CommandTimeout = 30
+    };
+
+    connectionString = connectionBuilder.ConnectionString;
+    databaseConfigurationSource = "Database environment variables";
+}
+else
+{
+    connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+        ?? throw new InvalidOperationException(
+            "Database configuration is missing. Configure Database__Host, Database__Name, " +
+            "Database__Username and Database__Password, or ConnectionStrings__DefaultConnection.");
+
+    databaseConfigurationSource = "ConnectionStrings:DefaultConnection";
 }
 
 builder.Services.AddDbContext<MedicAiDbContext>(options =>
     options
-        .UseNpgsql(connectionString)
+        .UseNpgsql(connectionString, npgsql =>
+        {
+            npgsql.EnableRetryOnFailure(
+                maxRetryCount: 3,
+                maxRetryDelay: TimeSpan.FromSeconds(5),
+                errorCodesToAdd: null);
+            npgsql.CommandTimeout(30);
+        })
         .UseSnakeCaseNamingConvention());
 
 var jwtKey = builder.Configuration["Jwt:Key"]
@@ -196,7 +258,7 @@ app.MapGet("/health", async (
     CancellationToken cancellationToken) =>
 {
     var databaseAvailable = false;
-    string? databaseStatus = null;
+    string databaseStatus;
 
     using var timeout = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
     timeout.CancelAfter(TimeSpan.FromSeconds(5));
@@ -210,9 +272,9 @@ app.MapGet("/health", async (
     {
         databaseStatus = "Timed out";
     }
-    catch
+    catch (Exception ex)
     {
-        databaseStatus = "Unavailable";
+        databaseStatus = $"Unavailable ({ex.GetType().Name})";
     }
 
     var payload = new
@@ -223,6 +285,9 @@ app.MapGet("/health", async (
         service = "MEDIC-AI API",
         databaseAvailable,
         databaseStatus,
+        databaseConfigurationSource,
+        databaseHost = databaseHost?.Trim() ?? "from connection string",
+        databaseName = databaseName?.Trim() ?? "from connection string",
         mlModelAvailable = modelService.IsAvailable,
         mlModelVersion = modelService.ModelVersionName,
         manualReviewFallbackAvailable = true,
@@ -235,16 +300,6 @@ app.MapGet("/health", async (
 
 app.MapFallbackToFile("index.html");
 
-/*
- * IMPORTANT FOR SHARED HOSTING
- * ----------------------------
- * Database seeding and ML.NET model initialisation used to run BEFORE app.Run().
- * On MonsterASP this could make every browser request wait while the database
- * retried and the model initialised.
- *
- * The application now starts serving HTTP immediately. Initialisation happens
- * in the background after IIS/Kestrel reports that the app has started.
- */
 var startupLogger = app.Services
     .GetRequiredService<ILoggerFactory>()
     .CreateLogger("StartupInitialization");

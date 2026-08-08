@@ -51,19 +51,19 @@ jobs:
       - name: Run tests
         run: dotnet test src/MedicAI.Tests/MedicAI.Tests.csproj --configuration Release
 
-      - name: Publish API + React as framework-dependent DLL
+      - name: Publish API + React
         run: dotnet publish src/MedicAI.Api/MedicAI.Api.csproj --configuration Release --output ./publish --self-contained false
 
       - name: Verify publish folder
         shell: pwsh
         run: |
-          Write-Host "Publish folder:"
-          Get-ChildItem "${{ github.workspace }}\publish" | Select-Object -First 20
+          Write-Host "Published Npgsql assemblies:"
+          Get-ChildItem "${{ github.workspace }}\publish\Npgsql*.dll" | Select-Object Name, Length, LastWriteTime
           if (-not (Test-Path "${{ github.workspace }}\publish\web.config")) {
             throw "web.config was not generated in the publish folder."
           }
 
-      - name: Deploy to MonsterASP.NET via WebDeploy
+      - name: Deploy cleanly to MonsterASP.NET via WebDeploy
         uses: rasmusbuchholdt/simply-web-deploy@2.2.0
         with:
           website-name: ${{ secrets.WEBSITE_NAME }}
@@ -71,3 +71,5 @@ jobs:
           server-username: ${{ secrets.SERVER_USERNAME }}
           server-password: ${{ secrets.SERVER_PASSWORD }}
           source-path: '\publish\'
+          target-delete: true
+          skip-directory-paths: 'logs'

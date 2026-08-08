@@ -5,10 +5,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>MedicAI.Api</RootNamespace>
     <InvariantGlobalization>false</InvariantGlobalization>
-
-    <!-- MonsterASP runtime fix:
-         run as a framework-dependent DLL behind IIS/Kestrel rather than
-         loading CoreCLR inside the IIS worker process. -->
     <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
     <UseAppHost>false</UseAppHost>
   </PropertyGroup>
@@ -22,7 +18,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.ML" Version="5.0.0" />
+
+    <!-- Explicitly pin Npgsql so the PostgreSQL provider and driver cannot
+         resolve to an unexpected transitive version on the build runner. -->
+    <PackageReference Include="Npgsql" Version="8.0.9" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.11" />
+
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
