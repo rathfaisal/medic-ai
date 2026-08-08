@@ -26,6 +26,7 @@ builder.Services.AddSwaggerGen(options =>
         Version = "v1",
         Description = "Patient pre-triage and clinic management FYP prototype. Preliminary urgency guidance only; no diagnosis."
     });
+
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -35,21 +36,32 @@ builder.Services.AddSwaggerGen(options =>
         In = ParameterLocation.Header,
         Description = "Enter the JWT access token."
     });
+
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
             new OpenApiSecurityScheme
             {
-                Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
             },
             Array.Empty<string>()
         }
     });
 });
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+if (string.IsNullOrWhiteSpace(connectionString))
+{
+    throw new InvalidOperationException("ConnectionStrings:DefaultConnection must be configured.");
+}
+
 builder.Services.AddDbContext<MedicAiDbContext>(options =>
     options
-        .UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+        .UseNpgsql(connectionString)
         .UseSnakeCaseNamingConvention());
 
 var jwtKey = builder.Configuration["Jwt:Key"]
@@ -69,34 +81,43 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey)),
             ClockSkew = TimeSpan.FromMinutes(1)
         };
+
         options.Events = new JwtBearerEvents
         {
             OnTokenValidated = async context =>
             {
                 var userIdText = context.Principal?.FindFirstValue(ClaimTypes.NameIdentifier);
                 var roleText = context.Principal?.FindFirstValue(ClaimTypes.Role);
+
                 if (!int.TryParse(userIdText, out var userId))
                 {
                     context.Fail("The access token does not contain a valid user identifier.");
                     return;
                 }
 
-                var dbContext = context.HttpContext.RequestServices.GetRequiredService<MedicAiDbContext>();
-                var account = await dbContext.Users
-                    .AsNoTracking()
-                    .Where(x => x.Id == userId)
-                    .Select(x => new { x.Status, x.Role })
-                    .FirstOrDefaultAsync(context.HttpContext.RequestAborted);
-
-                if (account is null || account.Status != MedicAI.Api.Domain.UserStatus.Active)
+                try
                 {
-                    context.Fail("The account is no longer active.");
-                    return;
+                    var dbContext = context.HttpContext.RequestServices.GetRequiredService<MedicAiDbContext>();
+                    var account = await dbContext.Users
+                        .AsNoTracking()
+                        .Where(x => x.Id == userId)
+                        .Select(x => new { x.Status, x.Role })
+                        .FirstOrDefaultAsync(context.HttpContext.RequestAborted);
+
+                    if (account is null || account.Status != MedicAI.Api.Domain.UserStatus.Active)
+                    {
+                        context.Fail("The account is no longer active.");
+                        return;
+                    }
+
+                    if (!string.Equals(account.Role.ToString(), roleText, StringComparison.Ordinal))
+                    {
+                        context.Fail("The account role has changed. Sign in again.");
+                    }
                 }
-
-                if (!string.Equals(account.Role.ToString(), roleText, StringComparison.Ordinal))
+                catch
                 {
-                    context.Fail("The account role has changed. Sign in again.");
+                    context.Fail("The account could not be validated because the database is temporarily unavailable.");
                 }
             }
         };
@@ -106,20 +127,23 @@ builder.Services.AddAuthorization();
 
 var configuredCorsOrigins = builder.Configuration["Cors:AllowedOrigins"]
     ?? "http://localhost:3000,http://localhost:5173";
+
 var allowedCorsOrigins = configuredCorsOrigins
     .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("WebClient", policy => policy
-        .WithOrigins(allowedCorsOrigins)
-        .AllowAnyHeader()
-        .AllowAnyMethod());
+    options.AddPolicy("WebClient", policy =>
+        policy
+            .WithOrigins(allowedCorsOrigins)
+            .AllowAnyHeader()
+            .AllowAnyMethod());
 });
 
 builder.Services.AddRateLimiter(options =>
 {
     options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+
     options.AddFixedWindowLimiter("login", limiter =>
     {
         limiter.PermitLimit = 10;
@@ -129,13 +153,17 @@ builder.Services.AddRateLimiter(options =>
     });
 });
 
-builder.Services.AddScoped<Microsoft.AspNetCore.Identity.IPasswordHasher<MedicAI.Api.Domain.User>, Microsoft.AspNetCore.Identity.PasswordHasher<MedicAI.Api.Domain.User>>();
+builder.Services.AddScoped<
+    Microsoft.AspNetCore.Identity.IPasswordHasher<MedicAI.Api.Domain.User>,
+    Microsoft.AspNetCore.Identity.PasswordHasher<MedicAI.Api.Domain.User>>();
+
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<IAuditService, AuditService>();
 builder.Services.AddScoped<INotificationService, NotificationService>();
 builder.Services.AddScoped<IRedFlagRuleEngine, RedFlagRuleEngine>();
 builder.Services.AddScoped<ITriageService, TriageService>();
 builder.Services.AddScoped<IQueueService, QueueService>();
+
 builder.Services.AddSingleton<MlTriageModelService>();
 builder.Services.AddHostedService<EmergencyAlertEscalationWorker>();
 
@@ -148,47 +176,122 @@ if (!string.IsNullOrWhiteSpace(renderPort))
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionMiddleware>();
+
 app.UseDefaultFiles();
 app.UseStaticFiles();
+
 app.UseSwagger();
 app.UseSwaggerUI();
+
 app.UseCors("WebClient");
 app.UseRateLimiter();
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
+
 app.MapGet("/health", async (
     MedicAiDbContext dbContext,
     MlTriageModelService modelService,
     CancellationToken cancellationToken) =>
 {
-    var databaseAvailable = await dbContext.Database.CanConnectAsync(cancellationToken);
-    var status = !databaseAvailable
-        ? "Unhealthy"
-        : modelService.IsAvailable ? "Healthy" : "Degraded";
+    var databaseAvailable = false;
+    string? databaseStatus = null;
+
+    using var timeout = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+    timeout.CancelAfter(TimeSpan.FromSeconds(5));
+
+    try
+    {
+        databaseAvailable = await dbContext.Database.CanConnectAsync(timeout.Token);
+        databaseStatus = databaseAvailable ? "Connected" : "Unavailable";
+    }
+    catch (OperationCanceledException)
+    {
+        databaseStatus = "Timed out";
+    }
+    catch
+    {
+        databaseStatus = "Unavailable";
+    }
 
     var payload = new
     {
-        status,
+        status = databaseAvailable
+            ? modelService.IsAvailable ? "Healthy" : "Degraded"
+            : "Starting/Degraded",
         service = "MEDIC-AI API",
         databaseAvailable,
+        databaseStatus,
         mlModelAvailable = modelService.IsAvailable,
         mlModelVersion = modelService.ModelVersionName,
         manualReviewFallbackAvailable = true,
+        initializationRunsInBackground = true,
         utcTime = DateTimeOffset.UtcNow
     };
 
-    IResult result = databaseAvailable
-        ? Results.Ok(payload)
-        : Results.Json(payload, statusCode: StatusCodes.Status503ServiceUnavailable);
-    return result;
+    return Results.Ok(payload);
 });
 
-// React/Vite single-page application fallback. API and /health endpoints are mapped above.
 app.MapFallbackToFile("index.html");
 
-await DatabaseSeeder.InitialiseAsync(app.Services);
-await app.Services.GetRequiredService<MlTriageModelService>().InitializeAsync(app.Services);
+/*
+ * IMPORTANT FOR SHARED HOSTING
+ * ----------------------------
+ * Database seeding and ML.NET model initialisation used to run BEFORE app.Run().
+ * On MonsterASP this could make every browser request wait while the database
+ * retried and the model initialised.
+ *
+ * The application now starts serving HTTP immediately. Initialisation happens
+ * in the background after IIS/Kestrel reports that the app has started.
+ */
+var startupLogger = app.Services
+    .GetRequiredService<ILoggerFactory>()
+    .CreateLogger("StartupInitialization");
+
+app.Lifetime.ApplicationStarted.Register(() =>
+{
+    _ = Task.Run(async () =>
+    {
+        var stoppingToken = app.Lifetime.ApplicationStopping;
+
+        try
+        {
+            startupLogger.LogInformation("Starting MEDIC-AI database initialisation in the background.");
+            await DatabaseSeeder.InitialiseAsync(app.Services, stoppingToken);
+            startupLogger.LogInformation("MEDIC-AI database initialisation completed.");
+        }
+        catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
+        {
+            return;
+        }
+        catch (Exception ex)
+        {
+            startupLogger.LogError(ex,
+                "Database initialisation failed. The website will remain online, but database functions may be unavailable.");
+        }
+
+        try
+        {
+            startupLogger.LogInformation("Starting ML.NET model initialisation in the background.");
+            var modelService = app.Services.GetRequiredService<MlTriageModelService>();
+            await modelService.InitializeAsync(app.Services, stoppingToken);
+            startupLogger.LogInformation(
+                "ML.NET initialisation finished. Available: {Available}. Version: {Version}.",
+                modelService.IsAvailable,
+                modelService.ModelVersionName);
+        }
+        catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
+        {
+            return;
+        }
+        catch (Exception ex)
+        {
+            startupLogger.LogError(ex,
+                "ML.NET model initialisation failed. Manual review fallback remains available.");
+        }
+    });
+});
 
 app.Run();
 
