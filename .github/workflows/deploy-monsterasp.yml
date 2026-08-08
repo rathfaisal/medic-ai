@@ -55,10 +55,10 @@ jobs:
         run: dotnet publish src/MedicAI.Api/MedicAI.Api.csproj --configuration Release --output ./publish --runtime win-x86 --self-contained false
 
       - name: Deploy to MonsterASP.NET via WebDeploy
-        uses: rasmusbuchholdt/simply-web-deploy@2.1.0
+        uses: rasmusbuchholdt/simply-web-deploy@2.2.0
         with:
           website-name: ${{ secrets.WEBSITE_NAME }}
           server-computer-name: ${{ secrets.SERVER_COMPUTER_NAME }}
           server-username: ${{ secrets.SERVER_USERNAME }}
           server-password: ${{ secrets.SERVER_PASSWORD }}
-          source-path: ./publish
+          source-path: '\publish\'
