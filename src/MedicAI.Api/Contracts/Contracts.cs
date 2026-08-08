@@ -4,16 +4,16 @@ using MedicAI.Api.Domain;
 namespace MedicAI.Api.Contracts;
 
 public sealed record RegisterPatientRequest(
-    [property: Required, EmailAddress, MaxLength(191)] string Email,
-    [property: Required, MinLength(8), MaxLength(100)] string Password,
-    [property: Required, MaxLength(150)] string FullName,
+    [Required, EmailAddress, MaxLength(191)] string Email,
+    [Required, MinLength(8), MaxLength(100)] string Password,
+    [Required, MaxLength(150)] string FullName,
     DateOnly DateOfBirth,
-    [property: Required, MaxLength(30)] string Phone,
-    [property: MaxLength(30)] string? Gender = null);
+    [Required, MaxLength(30)] string Phone,
+    [MaxLength(30)] string? Gender = null);
 
 public sealed record LoginRequest(
-    [property: Required, EmailAddress] string Email,
-    [property: Required] string Password);
+    [Required, EmailAddress] string Email,
+    [Required] string Password);
 
 public sealed record AuthUserResponse(
     int Id,
@@ -36,29 +36,34 @@ public sealed record PatientProfileResponse(
     string? EmergencyContact);
 
 public sealed record UpdatePatientProfileRequest(
-    [property: Required, MaxLength(150)] string FullName,
+    [Required, MaxLength(150)] string FullName,
     DateOnly DateOfBirth,
-    [property: MaxLength(30)] string? Gender,
-    [property: Required, MaxLength(30)] string Phone,
-    [property: MaxLength(255)] string? Address,
+    [MaxLength(30)] string? Gender,
+    [Required, MaxLength(30)] string Phone,
+    [MaxLength(255)] string? Address,
     string? Allergies,
     string? ExistingConditions,
-    [property: MaxLength(150)] string? EmergencyContact);
+    [MaxLength(150)] string? EmergencyContact);
 
-public sealed record DoctorSummaryResponse(int Id, string FullName, string RegistrationNo, string? Speciality, bool IsAvailable);
+public sealed record DoctorSummaryResponse(
+    int Id,
+    string FullName,
+    string RegistrationNo,
+    string? Speciality,
+    bool IsAvailable);
 
 public sealed record AppointmentRequest(
     int? PatientId,
     int? AssignedDoctorId,
     DateTimeOffset AppointmentDateTime,
-    [property: Required, MaxLength(100)] string ServiceType,
-    [property: MaxLength(500)] string? Reason);
+    [Required, MaxLength(100)] string ServiceType,
+    [MaxLength(500)] string? Reason);
 
 public sealed record AppointmentUpdateRequest(
     int? AssignedDoctorId,
     DateTimeOffset AppointmentDateTime,
-    [property: Required, MaxLength(100)] string ServiceType,
-    [property: MaxLength(500)] string? Reason);
+    [Required, MaxLength(100)] string ServiceType,
+    [MaxLength(500)] string? Reason);
 
 public sealed record AppointmentResponse(
     long Id,
@@ -76,10 +81,10 @@ public sealed record AppointmentResponse(
 
 public sealed record TriageSubmissionRequest(
     long? AppointmentId,
-    [property: Required, MaxLength(255)] string MainSymptom,
-    [property: Range(1, 3650)] int DurationValue,
+    [Required, MaxLength(255)] string MainSymptom,
+    [Range(1, 3650)] int DurationValue,
     DurationUnit DurationUnit,
-    [property: Range(0, 10)] short PainSeverity,
+    [Range(0, 10)] short PainSeverity,
     string? AdditionalSymptoms,
     bool ConsentConfirmed,
     bool Fever,
@@ -111,11 +116,17 @@ public sealed record TriageAssessmentResponse(
     UrgencyLevel? OverriddenUrgency,
     string? OverrideReason);
 
-public sealed record CheckInRequest(long AppointmentId, UrgencyLevel? ManualUrgency);
+public sealed record CheckInRequest(
+    long AppointmentId,
+    UrgencyLevel? ManualUrgency);
 
-public sealed record WalkInCheckInRequest(int PatientId, long? AssessmentId, UrgencyLevel? ManualUrgency);
+public sealed record WalkInCheckInRequest(
+    int PatientId,
+    long? AssessmentId,
+    UrgencyLevel? ManualUrgency);
 
-public sealed record QueueStatusUpdateRequest(QueueStatus Status);
+public sealed record QueueStatusUpdateRequest(
+    QueueStatus Status);
 
 public sealed record QueueEntryResponse(
     long Id,
@@ -133,12 +144,12 @@ public sealed record QueueEntryResponse(
 
 public sealed record OverrideUrgencyRequest(
     UrgencyLevel Urgency,
-    [property: Required, MinLength(5), MaxLength(500)] string Reason);
+    [Required, MinLength(5), MaxLength(500)] string Reason);
 
 public sealed record ConsultationRequest(
     long? AppointmentId,
     int PatientId,
-    [property: Required, MinLength(5)] string ClinicalNotes,
+    [Required, MinLength(5)] string ClinicalNotes,
     string? Diagnosis,
     string? TreatmentPlan,
     DateOnly? FollowUpDate);
@@ -163,16 +174,19 @@ public sealed record PatientReviewResponse(
     IReadOnlyList<ConsultationResponse> Consultations);
 
 public sealed record AdminCreateUserRequest(
-    [property: Required, EmailAddress, MaxLength(191)] string Email,
-    [property: Required, MinLength(8), MaxLength(100)] string Password,
+    [Required, EmailAddress, MaxLength(191)] string Email,
+    [Required, MinLength(8), MaxLength(100)] string Password,
     UserRole Role,
-    [property: Required, MaxLength(150)] string FullName,
-    [property: MaxLength(30)] string? Phone,
-    [property: MaxLength(100)] string? Position,
-    [property: MaxLength(80)] string? RegistrationNo,
-    [property: MaxLength(120)] string? Speciality);
+    [Required, MaxLength(150)] string FullName,
+    [MaxLength(30)] string? Phone,
+    [MaxLength(100)] string? Position,
+    [MaxLength(80)] string? RegistrationNo,
+    [MaxLength(120)] string? Speciality);
 
-public sealed record AdminUpdateUserRequest(UserStatus Status, UserRole Role, bool? IsDoctorAvailable);
+public sealed record AdminUpdateUserRequest(
+    UserStatus Status,
+    UserRole Role,
+    bool? IsDoctorAvailable);
 
 public sealed record UserListResponse(
     int Id,
@@ -184,7 +198,8 @@ public sealed record UserListResponse(
     DateTimeOffset CreatedAt,
     bool? IsDoctorAvailable);
 
-public sealed record EmergencyAlertActionRequest(string? Notes);
+public sealed record EmergencyAlertActionRequest(
+    string? Notes);
 
 public sealed record EmergencyAlertResponse(
     long Id,
@@ -202,7 +217,13 @@ public sealed record EmergencyAlertResponse(
     string? ResolvedBy,
     DateTimeOffset? ResolvedAt);
 
-public sealed record NotificationResponse(long Id, string Message, NotificationChannel Channel, DeliveryStatus DeliveryStatus, bool IsRead, DateTimeOffset CreatedAt);
+public sealed record NotificationResponse(
+    long Id,
+    string Message,
+    NotificationChannel Channel,
+    DeliveryStatus DeliveryStatus,
+    bool IsRead,
+    DateTimeOffset CreatedAt);
 
 public sealed record AuditLogResponse(
     long Id,
