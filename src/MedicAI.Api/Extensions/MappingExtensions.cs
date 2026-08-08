@@ -83,16 +83,16 @@ public static class MappingExtensions
         alert.Status,
         alert.AssignedRole,
         alert.CreatedAt,
-        GetDisplayName(alert.AcknowledgedByUser),
+        GetNullableDisplayName(alert.AcknowledgedByUser),
         alert.AcknowledgedAt,
         alert.AcknowledgementNotes,
         alert.ResolutionNotes,
-        GetDisplayName(alert.ResolvedByUser),
+        GetNullableDisplayName(alert.ResolvedByUser),
         alert.ResolvedAt);
 
-    public static string GetDisplayName(this User user) => GetDisplayName((User?)user) ?? user.Email;
+    public static string GetDisplayName(this User user) => GetNullableDisplayName(user) ?? user.Email;
 
-    private static string? GetDisplayName(User? user) =>
+    private static string? GetNullableDisplayName(User? user) =>
         user?.PatientProfile?.FullName
         ?? user?.DoctorProfile?.FullName
         ?? user?.StaffProfile?.FullName
