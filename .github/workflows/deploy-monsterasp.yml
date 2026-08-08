@@ -1,0 +1,64 @@
+name: Build and deploy MEDIC-AI to MonsterASP.NET
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  build_and_deploy:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install React dependencies
+        working-directory: src/medic-ai-web
+        run: npm install
+
+      - name: Build React frontend
+        working-directory: src/medic-ai-web
+        run: npm run build
+
+      - name: Copy React build into ASP.NET Core wwwroot
+        shell: pwsh
+        run: |
+          $target = 'src/MedicAI.Api/wwwroot'
+          if (Test-Path $target) { Remove-Item $target -Recurse -Force }
+          New-Item -ItemType Directory -Path $target | Out-Null
+          Copy-Item 'src/medic-ai-web/dist/*' $target -Recurse -Force
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore API
+        run: dotnet restore src/MedicAI.Api/MedicAI.Api.csproj
+
+      - name: Build API
+        run: dotnet build src/MedicAI.Api/MedicAI.Api.csproj --configuration Release --no-restore
+
+      - name: Run tests
+        run: dotnet test src/MedicAI.Tests/MedicAI.Tests.csproj --configuration Release
+
+      - name: Publish API + React
+        run: dotnet publish src/MedicAI.Api/MedicAI.Api.csproj --configuration Release --output ./publish --runtime win-x86 --self-contained false
+
+      - name: Deploy to MonsterASP.NET via WebDeploy
+        uses: rasmusbuchholdt/simply-web-deploy@2.1.0
+        with:
+          website-name: ${{ secrets.WEBSITE_NAME }}
+          server-computer-name: ${{ secrets.SERVER_COMPUTER_NAME }}
+          server-username: ${{ secrets.SERVER_USERNAME }}
+          server-password: ${{ secrets.SERVER_PASSWORD }}
+          source-path: ./publish

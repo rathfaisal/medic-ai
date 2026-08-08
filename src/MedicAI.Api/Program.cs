@@ -148,6 +148,8 @@ if (!string.IsNullOrWhiteSpace(renderPort))
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionMiddleware>();
+app.UseDefaultFiles();
+app.UseStaticFiles();
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseCors("WebClient");
@@ -181,6 +183,9 @@ app.MapGet("/health", async (
         : Results.Json(payload, statusCode: StatusCodes.Status503ServiceUnavailable);
     return result;
 });
+
+// React/Vite single-page application fallback. API and /health endpoints are mapped above.
+app.MapFallbackToFile("index.html");
 
 await DatabaseSeeder.InitialiseAsync(app.Services);
 await app.Services.GetRequiredService<MlTriageModelService>().InitializeAsync(app.Services);
