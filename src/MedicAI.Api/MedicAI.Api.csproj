@@ -5,6 +5,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>MedicAI.Api</RootNamespace>
     <InvariantGlobalization>false</InvariantGlobalization>
+
+    <!-- MonsterASP runtime fix:
+         run as a framework-dependent DLL behind IIS/Kestrel rather than
+         loading CoreCLR inside the IIS worker process. -->
+    <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
+    <UseAppHost>false</UseAppHost>
   </PropertyGroup>
 
   <ItemGroup>

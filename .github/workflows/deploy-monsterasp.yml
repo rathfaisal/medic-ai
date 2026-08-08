@@ -51,8 +51,8 @@ jobs:
       - name: Run tests
         run: dotnet test src/MedicAI.Tests/MedicAI.Tests.csproj --configuration Release
 
-      - name: Publish API + React
-        run: dotnet publish src/MedicAI.Api/MedicAI.Api.csproj --configuration Release --output ./publish --runtime win-x86 --self-contained false
+      - name: Publish API + React as framework-dependent DLL
+        run: dotnet publish src/MedicAI.Api/MedicAI.Api.csproj --configuration Release --output ./publish --self-contained false
 
       - name: Deploy to MonsterASP.NET via WebDeploy
         uses: rasmusbuchholdt/simply-web-deploy@2.2.0
@@ -61,4 +61,4 @@ jobs:
           server-computer-name: ${{ secrets.SERVER_COMPUTER_NAME }}
           server-username: ${{ secrets.SERVER_USERNAME }}
           server-password: ${{ secrets.SERVER_PASSWORD }}
-          source-path: '\publish\'
+          source-path: '\\publish\\'
