@@ -31,7 +31,7 @@ export default function LoginPage() {
       <div className="auth-panel auth-intro">
         <Link className="auth-home-link" to="/">← Back to homepage</Link>
         <div className="brand large">
-          <div className="brand-mark">M+</div>
+          <img className="brand-mark" src="/medic-ai.svg" alt="" />
           <div><strong>MEDIC-AI</strong><span>Klinik Medic 24-7</span></div>
         </div>
         <h1>Welcome to MEDIC-AI.</h1>

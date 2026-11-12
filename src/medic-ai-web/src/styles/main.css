@@ -34,7 +34,7 @@ small { color: var(--muted); }
 .app-shell { min-height: 100vh; display: grid; grid-template-columns: 238px minmax(0, 1fr); }
 .sidebar { position: sticky; top: 0; height: 100vh; background: #102d3b; color: white; padding: 26px 18px; display: flex; flex-direction: column; gap: 28px; overflow-y: auto; }
 .brand { display: flex; align-items: center; gap: 12px; }
-.brand-mark { width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; background: #b9f0e3; color: #103b38; font-weight: 900;  }
+.brand-mark { width: 44px; height: 44px; flex: 0 0 auto; }
 .brand strong, .brand span { display: block; }
 .brand strong { letter-spacing: .04em; font-size: 1.05rem; color: white; }
 .brand span { font-size: .78rem; opacity: .72; margin-top: 2px; }
@@ -363,4 +363,17 @@ td > small { margin-top: 4px; }
 @media (max-width: 480px) {
   .queue-summary { gap: 6px; }
   .queue-summary > div { padding: 8px; }
+}
+
+.clinic-hero-photo { margin: 0; }
+.clinic-hero-photo img { display: block; width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow); }
+.clinic-hero-photo figcaption { margin-top: 8px; font-size: .75rem; color: var(--muted); }
+.public-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); padding-block: clamp(42px, 7vw, 104px); }
+.visit-guide { margin-inline: max(24px, calc((100% - 1200px) / 2)); margin-bottom: 40px; }
+.visit-guide ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.visit-guide li + li { border-top: 0; }
+@media (max-width: 760px) {
+  .public-hero, .visit-guide ol { grid-template-columns: 1fr; }
+  .visit-guide ol { gap: 0; }
+  .visit-guide li + li { border-top: 1px solid #41606b; }
 }
