@@ -34,8 +34,8 @@ export default function LoginPage() {
           <div className="brand-mark">M+</div>
           <div><strong>MEDIC-AI</strong><span>Klinik Medic 24-7</span></div>
         </div>
-        <h1>Smarter clinic flow with responsible AI assistance.</h1>
-        <p>Manage appointments, collect structured symptoms, identify red flags, organise the digital queue and keep doctors in control.</p>
+        <h1>Welcome to MEDIC-AI.</h1>
+        <p>Sign in to access your appointments or clinic workspace.</p>
         <div className="safety-box">
           <strong>Clinical safety first</strong>
           <span>The system provides preliminary urgency guidance only and never provides an AI diagnosis.</span>
@@ -45,7 +45,6 @@ export default function LoginPage() {
       <div className="auth-panel auth-form-panel">
         <form className="auth-form" onSubmit={submit}>
           <div>
-            <div className="eyebrow">Secure access</div>
             <h2>Sign in to MEDIC-AI</h2>
             <p>Use your authorised patient or clinic account.</p>
           </div>
