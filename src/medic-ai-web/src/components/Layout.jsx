@@ -34,13 +34,14 @@ export default function Layout() {
 
   return (
     <div className="app-shell">
+      <a className="skip-link" href="#workspace">Skip to content</a>
       <aside className="sidebar">
         <div className="brand">
           <div className="brand-mark">M+</div>
           <div><strong>MEDIC-AI</strong><span>Clinic Management</span></div>
         </div>
 
-        <nav>
+        <nav aria-label="Workspace">
           {(navByRole[user?.role] || []).map(([label, path]) => (
             <NavLink
               key={path}
@@ -65,12 +66,12 @@ export default function Layout() {
         <header className="topbar">
           <div>
             <div className="eyebrow">Klinik Medic 24-7</div>
-            <h1>Patient Pre-Triage & Clinic Management</h1>
+            <strong>{user?.role === 'Patient' ? 'Patient portal' : 'Clinic workspace'}</strong>
           </div>
           <div className="safety-pill">AI guidance is not a diagnosis</div>
         </header>
 
-        <section className="page-area"><Outlet /></section>
+        <section className="page-area" id="workspace"><Outlet /></section>
       </main>
     </div>
   )

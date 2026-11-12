@@ -1,9 +1,11 @@
+import { useEffect, useId, useRef } from 'react'
+
 export function PageHeader({ title, description, actions }) {
-  return <div className="page-header"><div><h2>{title}</h2>{description && <p>{description}</p>}</div>{actions && <div className="page-actions">{actions}</div>}</div>
+  return <div className="page-header"><div><h1>{title}</h1>{description && <p>{description}</p>}</div>{actions && <div className="page-actions">{actions}</div>}</div>
 }
 
 export function Card({ title, children, className = '' }) {
-  return <section className={`card ${className}`}><div className="card-title">{title}</div>{children}</section>
+  return <section className={`card ${className}`}><h2 className="card-title">{title}</h2>{children}</section>
 }
 
 export function StatCard({ label, value, hint }) {
@@ -16,11 +18,11 @@ export function StatusBadge({ value }) {
 }
 
 export function Alert({ type = 'info', children }) {
-  return <div className={`alert alert-${type}`}>{children}</div>
+  return <div className={`alert alert-${type}`} role={type === 'danger' ? 'alert' : 'status'}>{children}</div>
 }
 
 export function Loading() {
-  return <div className="loading"><div className="spinner" /> Loading…</div>
+  return <div className="loading" role="status"><div className="spinner" aria-hidden="true" /> Loading…</div>
 }
 
 export function EmptyState({ title = 'Nothing to show', description }) {
@@ -32,5 +34,34 @@ export function Field({ label, required, hint, children }) {
 }
 
 export function Modal({ title, children, onClose }) {
-  return <div className="modal-backdrop" onMouseDown={onClose}><div className="modal" onMouseDown={(event) => event.stopPropagation()}><div className="modal-header"><h3>{title}</h3><button className="icon-button" onClick={onClose}>×</button></div>{children}</div></div>
+  const dialog = useRef(null)
+  const titleId = useId()
+
+  useEffect(() => {
+    const element = dialog.current
+    const trigger = document.activeElement
+    element.showModal()
+    return () => {
+      element.close()
+      trigger?.focus()
+    }
+  }, [])
+
+  return (
+    <dialog
+      className="modal"
+      ref={dialog}
+      aria-labelledby={titleId}
+      onCancel={(event) => { event.preventDefault(); onClose() }}
+      onClick={(event) => { if (event.target === event.currentTarget) onClose() }}
+    >
+      <div className="modal-content">
+        <div className="modal-header">
+          <h2 id={titleId}>{title}</h2>
+          <button className="icon-button" type="button" aria-label="Close dialog" onClick={onClose}>×</button>
+        </div>
+        {children}
+      </div>
+    </dialog>
+  )
 }
