@@ -29,33 +29,38 @@ export default function DashboardPage() {
   }
 
   if (!data) return <Loading />
+  const isPatient = user.role === 'Patient'
   return <>
-    <PageHeader title={`Welcome, ${user.displayName}`} description="Your role-based overview of today's clinic activity." />
+    <PageHeader title={`Welcome, ${user.displayName}`} description={isPatient ? "Manage your appointments and prepare for your visit." : "Today’s clinic activity."} actions={isPatient && <Link className="button button-primary" to="/appointments">View appointments</Link>} />
     {error && <Alert type="danger">{error}</Alert>}
-    {user.role === 'Patient' ? <PatientDashboard data={data} /> : <ClinicDashboard role={user.role} data={data} />}
+    {!error && (isPatient ? <PatientDashboard data={data} /> : <ClinicDashboard role={user.role} data={data} />)}
   </>
 }
 
 function PatientDashboard({ data }) {
-  const upcoming = data.appointments?.filter((x) => ['Booked', 'CheckedIn', 'InConsultation'].includes(x.status)) || []
+  const upcoming = (data.appointments || [])
+    .filter((appointment) =>
+      ['CheckedIn', 'InConsultation'].includes(appointment.status) ||
+      (appointment.status === 'Booked' && new Date(appointment.appointmentDateTime) >= new Date())
+    )
+    .sort((a, b) => new Date(a.appointmentDateTime) - new Date(b.appointmentDateTime))
   const latest = data.triage?.[0]
   const unread = data.notifications?.filter((x) => !x.isRead).length || 0
   return <>
-    <div className="stats-grid">
-      <StatCard label="Upcoming appointments" value={upcoming.length} />
-      <StatCard label="Latest urgency" value={latest?.effectiveUrgency || 'Not assessed'} />
-      <StatCard label="Queue status" value={data.queue?.queueStatus || 'Not checked in'} />
-      <StatCard label="Unread notifications" value={unread} />
-    </div>
-    <div className="content-grid two-thirds">
+    <div className="content-grid two-thirds visit-priority">
       <Card title="Next appointment">
         {upcoming.length ? <div className="appointment-highlight"><div><strong>{formatDate(upcoming[0].appointmentDateTime)}</strong><span>{upcoming[0].serviceType}</span><span>{upcoming[0].doctorName || 'Doctor to be assigned'}</span></div><StatusBadge value={upcoming[0].status} /></div> : <EmptyState description="Book an appointment to begin the pre-triage workflow." />}
-        <Link className="text-link" to="/appointments">Manage appointments →</Link>
       </Card>
       <Card title="Pre-triage guidance">
         {latest ? <><div className="result-line"><StatusBadge value={latest.effectiveUrgency} /><span>{Math.round((latest.confidence || 0) * 100)}% confidence</span></div><p>{latest.guidance}</p>{latest.reviewRequired && <Alert type="warning">Staff review is required.</Alert>}</> : <EmptyState description="Submit symptoms before your clinic visit." />}
         <Link className="text-link" to="/pre-triage">Open pre-triage form →</Link>
       </Card>
+    </div>
+    <div className="stats-grid dashboard-overview">
+      <StatCard label="Upcoming appointments" value={upcoming.length} />
+      <StatCard label="Latest urgency" value={latest?.effectiveUrgency || 'Not assessed'} />
+      <StatCard label="Queue status" value={data.queue?.queueStatus || 'Not checked in'} />
+      <StatCard label="Unread notifications" value={unread} />
     </div>
     <Alert type="info"><strong>Important:</strong> MEDIC-AI provides preliminary urgency guidance only. Contact a healthcare professional if you are worried, and seek emergency help for severe symptoms.</Alert>
   </>
