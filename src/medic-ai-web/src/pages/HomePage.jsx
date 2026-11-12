@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="public-home">
       <header className="public-nav">
         <Link className="public-brand" to="/">
-          <span className="brand-mark" aria-hidden="true">M+</span>
+          <img className="brand-mark" src="/medic-ai.svg" alt="" />
           <span><strong>MEDIC-AI</strong><small>Klinik Medic 24-7</small></span>
         </Link>
         <nav className="public-nav-actions" aria-label="Account">
@@ -33,14 +33,19 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="visit-guide">
-            <h2>Your visit, step by step</h2>
-            <ol>
-              <li><strong>Book an appointment</strong><span>Choose a time for your clinic visit.</span></li>
-              <li><strong>Share your symptoms</strong><span>Complete the pre-triage form before your visit.</span></li>
-              <li><strong>Follow your queue status</strong><span>Check your place in the queue after checking in.</span></li>
-            </ol>
-          </div>
+          <figure className="clinic-hero-photo">
+            <img src="/clinic-reception.webp" alt="Illustration of a visitor speaking with a clinic receptionist" width="1180" height="787" fetchPriority="high" />
+            <figcaption>Illustrative clinic scene</figcaption>
+          </figure>
+        </section>
+
+        <section className="visit-guide">
+          <h2>Your visit, step by step</h2>
+          <ol>
+            <li><strong>Book an appointment</strong><span>Choose a time for your clinic visit.</span></li>
+            <li><strong>Share your symptoms</strong><span>Complete the pre-triage form before your visit.</span></li>
+            <li><strong>Follow your queue status</strong><span>Check your place in the queue after checking in.</span></li>
+          </ol>
         </section>
 
         <section className="public-access">

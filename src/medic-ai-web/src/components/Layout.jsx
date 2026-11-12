@@ -37,7 +37,7 @@ export default function Layout() {
       <a className="skip-link" href="#workspace">Skip to content</a>
       <aside className="sidebar">
         <div className="brand">
-          <div className="brand-mark">M+</div>
+          <img className="brand-mark" src="/medic-ai.svg" alt="" />
           <div><strong>MEDIC-AI</strong><span>Clinic Management</span></div>
         </div>
 

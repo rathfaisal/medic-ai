@@ -35,7 +35,7 @@ export default function RegisterPage() {
       <div className="auth-panel auth-intro">
         <Link className="auth-home-link" to="/">← Back to homepage</Link>
         <div className="brand large">
-          <div className="brand-mark">M+</div>
+          <img className="brand-mark" src="/medic-ai.svg" alt="" />
           <div><strong>MEDIC-AI</strong><span>Patient Registration</span></div>
         </div>
         <h1>Create your secure clinic account.</h1>
